@@ -21,6 +21,14 @@
     align-items: center;
   }
 
+  &-text {
+    display: flex;
+    font-family: "AvenirSemiBold";
+    margin: 16px;
+    width: 80%;
+    font-size: 0.8em;
+  }
+
   &__text {
     font-family: "AvenirSemiBold";
     margin: 16px;
@@ -39,9 +47,12 @@
 
   &__left,
   &__right {
-    width: 80%;
-    font-size: 0.8em;
-    margin: 16px;
+    width: 90%;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-top: auto;
+    font-size: 0.7em;
   }
 }
 
@@ -56,7 +67,7 @@
       margin-left: 24px;
     }
     &-image {
-      width: 94%;
+      width: 85%;
       height: 370px;
       margin-bottom: 24px;
       margin-left: 24px;
@@ -68,28 +79,44 @@
       align-items: center;
     }
 
+    &-text {
+      display: flex;
+      font-family: "AvenirSemiBold";
+      margin: 24px;
+      width: 80%;
+      font-size: 1em;
+    }
+
     &__text {
       display: flex;
       font-family: "AvenirSemiBold";
       margin: 24px;
       width: 80%;
+      font-size: 1.5em;
 
       &--title {
         margin-left: 24px;
+        margin-top: 10px;
         font-family: "AvenirSemiBold";
+        font-size: 1.5em;
       }
     }
   }
 }
 
-.text-title {
-  display: flex;
-  flex-direction: row;
+@include medium {
+  .text-title {
+    display: flex;
+    flex-direction: row;
 
-  &__left,
-  &__right {
-    width: 80%;
-    font-size: 1em;
-    margin: 24px;
+    &__left,
+    &__right {
+      width: 80%;
+      font-size: 1em;
+      margin-left: 24px;
+      margin-right: 24px;
+      margin-bottom: 24px;
+      margin-top: auto;
+    }
   }
 }

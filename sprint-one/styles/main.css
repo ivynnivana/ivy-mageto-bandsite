@@ -104,7 +104,11 @@ body {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     font-size: 15px;
-    margin-bottom: 35px;
+    padding-bottom: 50px;
+  }
+  .header__nav:hover {
+    padding-bottom: 30px;
+    width: 160px;
   }
 }
 
@@ -181,6 +185,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #fafafa;
+  width: 100%;
 }
 
 .section__image--title {
@@ -190,7 +195,7 @@ body {
 }
 
 .section__image--gallery {
-  width: 80%;
+  width: 90%;
   margin-bottom: 16px;
   margin-left: 16px;
   margin-right: 16px;
@@ -226,6 +231,9 @@ body {
     font-size: 4em;
     margin-left: 24px;
   }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
   .section__image {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -291,6 +299,16 @@ body {
           align-items: center;
 }
 
+.about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "AvenirSemiBold";
+  margin: 16px;
+  width: 80%;
+  font-size: 0.8em;
+}
+
 .about__text {
   font-family: "AvenirSemiBold";
   margin: 16px;
@@ -313,9 +331,12 @@ body {
 }
 
 .text-title__left, .text-title__right {
-  width: 80%;
-  font-size: 0.8em;
-  margin: 16px;
+  width: 90%;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  margin-top: auto;
+  font-size: 0.7em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -332,7 +353,7 @@ body {
     margin-left: 24px;
   }
   .about-image {
-    width: 94%;
+    width: 85%;
     height: 370px;
     margin-bottom: 24px;
     margin-left: 24px;
@@ -346,6 +367,15 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .about-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "AvenirSemiBold";
+    margin: 24px;
+    width: 80%;
+    font-size: 1em;
+  }
   .about__text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -353,26 +383,33 @@ body {
     font-family: "AvenirSemiBold";
     margin: 24px;
     width: 80%;
+    font-size: 1.5em;
   }
   .about__text--title {
     margin-left: 24px;
+    margin-top: 10px;
     font-family: "AvenirSemiBold";
+    font-size: 1.5em;
   }
 }
 
-.text-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.text-title__left, .text-title__right {
-  width: 80%;
-  font-size: 1em;
-  margin: 24px;
+@media only screen and (min-width: 768px) {
+  .text-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .text-title__left, .text-title__right {
+    width: 80%;
+    font-size: 1em;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    margin-top: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */

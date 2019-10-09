@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: column;
   background-color: $alabaster;
+  width: 100%;
 
   &--title {
     font-family: "AvenirBold";
@@ -36,7 +37,7 @@
   }
 
   &--gallery {
-    width: 80%;
+    width: 90%;
     margin-bottom: 16px;
     margin-left: 16px;
     margin-right: 16px;
@@ -69,19 +70,21 @@
       }
     }
   }
-  .section__image {
-    flex-direction: row;
-    flex-wrap: wrap;
+  @include medium {
+    .section__image {
+      flex-direction: row;
+      flex-wrap: wrap;
 
-    &--title {
-      padding-left: 24px;
-      padding-right: 300px;
-      font-size: 2em;
-    }
-    &--gallery {
-      width: 25%;
-      margin-bottom: 24px;
-      margin-left: 24px;
+      &--title {
+        padding-left: 24px;
+        padding-right: 300px;
+        font-size: 2em;
+      }
+      &--gallery {
+        width: 25%;
+        margin-bottom: 24px;
+        margin-left: 24px;
+      }
     }
   }
 }
