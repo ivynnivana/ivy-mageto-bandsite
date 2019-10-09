@@ -1,0 +1,85 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  font-family: "AvenirRegular";
+
+  &__title {
+    font-family: "AvenirBold";
+    font-size: 0.8em;
+    margin-left: 16px;
+  }
+  &-image {
+    width: 90%;
+    height: 150px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: "AvenirSemiBold";
+    margin: 16px;
+    width: 80%;
+
+    &--title {
+      margin-left: 16px;
+      font-family: "AvenirSemiBold";
+    }
+
+    &--left,
+    &--right {
+      width: 80%;
+      font-size: 0.8em;
+      margin: 16px;
+    }
+  }
+}
+
+@include medium {
+  .about {
+    flex-direction: column;
+    font-family: "AvenirRegular";
+
+    &__title {
+      font-family: "AvenirBold";
+      font-size: 1em;
+      margin-left: 24px;
+    }
+    &-image {
+      width: 94%;
+      height: 370px;
+      margin-bottom: 16px;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+
+    &__image {
+      display: flex;
+      align-items: center;
+    }
+
+    &__text {
+      font-family: "AvenirSemiBold";
+      margin: 16px;
+      width: 80%;
+
+      &--title {
+        margin-left: 16px;
+        font-family: "AvenirSemiBold";
+      }
+
+      &--left,
+      &--right {
+        flex-direction: column;
+        width: 80%;
+        font-size: 1em;
+        margin: 16px;
+      }
+    }
+  }
+}

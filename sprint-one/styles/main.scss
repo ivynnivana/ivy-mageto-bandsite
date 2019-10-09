@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+html,
+body {
+  margin: 0;
+  font-family: "AvenirRegular", sans-serif;
+  box-sizing: border-box;
+}
+
+* *:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@import "./Partials/breakpoints";
+@import "./Partials/colors";
+@import "./Partials/font";
+@import "./Partials/footer";
+@import "./Partials/header";
+@import "./Partials/image";
+@import "./Partials/mainsection";
