@@ -45,9 +45,18 @@
   display: flex;
   flex-direction: column;
 
-  &__left,
+  &__left {
+    width: 90%;
+    line-height: 150%;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-top: auto;
+    font-size: 0.7em;
+  }
   &__right {
     width: 90%;
+    line-height: 150%;
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 16px;
@@ -109,10 +118,19 @@
     display: flex;
     flex-direction: row;
 
-    &__left,
+    &__left {
+      width: 80%;
+      font-size: 1em;
+      line-height: 150%;
+      margin-left: 24px;
+      margin-right: 24px;
+      margin-bottom: 24px;
+      margin-top: auto;
+    }
     &__right {
       width: 80%;
       font-size: 1em;
+      line-height: 150%;
       margin-left: 24px;
       margin-right: 24px;
       margin-bottom: 24px;
