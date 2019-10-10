@@ -1,0 +1,43 @@
+.footer {
+  color: $white;
+  background-color: $black;
+  height: 90vh;
+
+  &-title {
+    margin-left: 16px;
+    padding-top: 20px;
+    font-family: "AvenirBold";
+    font-size: 2em;
+  }
+  &-socials {
+    display: flex;
+    margin-left: 16px;
+
+    &__media {
+      margin-right: 25px;
+    }
+  }
+}
+.address-one,
+.address-two,
+.address-three,
+.address-four {
+  margin-left: 16px;
+  margin-top: 40px;
+
+  &__name {
+    font-family: "AvenirSemiBold";
+  }
+  &__location {
+    font-family: "AvenirRegular";
+    font-size: 0.8em;
+  }
+}
+.address-four {
+  font-size: 0.8em;
+}
+.address-mailto {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+}
