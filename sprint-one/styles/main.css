@@ -132,6 +132,7 @@ body {
   }
   .header__nav {
     margin-left: 56px;
+    margin-right: 10px;
     text-decoration: none;
     color: #e1e1e1;
     font-size: 12px;
@@ -469,11 +470,10 @@ body {
     margin-left: 180px;
   }
   .about-image {
-    width: 90%;
-    height: 370px;
+    width: 62%;
+    height: 450px;
     margin-bottom: 24px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 250px;
   }
   .about__image {
     display: -webkit-box;
@@ -488,8 +488,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     font-family: "AvenirSemiBold";
-    margin: 24px;
-    width: 80%;
+    margin-left: 250px;
+    width: 62%;
     font-size: 1em;
   }
   .about__text {
@@ -497,12 +497,13 @@ body {
     display: -ms-flexbox;
     display: flex;
     font-family: "AvenirSemiBold";
-    margin: 24px;
-    width: 80%;
+    margin-top: 10px;
+    margin-left: 250px;
+    width: 62%;
     font-size: 1.5em;
   }
   .about__text--title {
-    margin-left: 24px;
+    margin-left: 250px;
     margin-top: 10px;
     font-family: "AvenirSemiBold";
     font-size: 1.5em;
@@ -519,13 +520,19 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .text-title__left, .text-title__right {
-    width: 80%;
-    font-size: 1em;
-    margin-left: 24px;
-    margin-right: 24px;
+  .text-title__left {
+    width: 30%;
+    line-height: 200%;
+    font-size: 0.8em;
+    margin-left: 250px;
     margin-bottom: 24px;
-    margin-top: auto;
+  }
+  .text-title__right {
+    width: 30%;
+    line-height: 200%;
+    font-size: 0.8em;
+    margin-left: 20px;
+    margin-bottom: 24px;
   }
 }
 /*# sourceMappingURL=main.css.map */
