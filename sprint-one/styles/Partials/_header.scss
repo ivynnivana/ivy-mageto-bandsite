@@ -1,5 +1,5 @@
 .header {
-  height: 90px;
+  height: 15vh;
   background-color: $black;
   display: flex;
   flex-direction: column;
@@ -13,15 +13,15 @@
   &__image {
     display: flex;
     justify-content: center;
-    margin-left: 95px;
+    margin-left: 30vw;
   }
 
   &__nav {
     text-decoration: none;
     color: $mercury;
     font-size: 15px;
-    margin-right: 60px;
-    margin-left: 40px;
+    margin-right: 15vw;
+    margin-left: 10vw;
     margin-bottom: 10px;
 
     &:hover {
@@ -34,25 +34,25 @@
 
 @include medium {
   .header {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    height: 90px;
+    height: 15vh;
+
+    &-div {
+      display: flex;
+      flex-direction: row;
+    }
 
     &__image {
-      margin-top: 4px;
-      height: 120px;
-      width: 120px;
+      margin-left: 10px;
+      margin-right: 70px;
     }
 
     &__nav {
-      justify-content: space-evenly;
       font-size: 15px;
-      padding-bottom: 50px;
+      margin-right: 20vw;
+      margin-left: 5vw;
 
       &:hover {
-        padding-bottom: 30px;
-        width: 160px;
+        padding-bottom: 32px;
       }
     }
   }
