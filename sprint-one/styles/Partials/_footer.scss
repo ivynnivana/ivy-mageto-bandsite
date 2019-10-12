@@ -13,6 +13,9 @@
     margin-left: 16px;
     margin-right: 25px;
   }
+  &-logo {
+    display: none;
+  }
 }
 .address-one,
 .address-two,
@@ -48,17 +51,26 @@
 
     &-container {
       display: flex;
-      align-items: center;
+      padding-top: 20px;
+
+      &__nav {
+        margin-right: 105px;
+        margin-left: 90px;
+      }
     }
 
     &-title {
-      margin-left: 16px;
       font-size: 1.5em;
-      margin-right: 0;
       padding-top: 0;
+      margin: 0;
+      padding-right: 10px;
+      padding-left: 24px;
     }
     &-media {
-      margin-right: 20px;
+      margin-right: 0;
+    }
+    &-logo {
+      display: flex;
     }
   }
   .address-one,
@@ -84,5 +96,55 @@
   }
   .address-mailto {
     font-size: 0.8em;
+  }
+}
+@include large {
+  .footer {
+    &-container {
+      margin-left: 160px;
+
+      &__nav {
+        margin-right: 100px;
+      }
+    }
+    &-media {
+      margin-right: 40px;
+    }
+    &-title {
+      margin-right: 60px;
+    }
+  }
+  .copyright-container {
+    margin-left: 160px;
+  }
+
+  .address-one {
+    margin-left: 180px;
+    margin-top: 20px;
+  }
+}
+@include huge {
+  .footer {
+    &-container {
+      margin-left: 160px;
+
+      &__nav {
+        margin-right: 270px;
+      }
+    }
+    &-media {
+      margin-right: 40px;
+    }
+    &-title {
+      margin-right: 90px;
+    }
+  }
+  .copyright-container {
+    margin-left: 160px;
+  }
+
+  .address-one {
+    margin-left: 180px;
+    margin-top: 20px;
   }
 }
