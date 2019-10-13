@@ -6,7 +6,7 @@
     position: relative;
     background-image: url(../../assets/images/heroimage.jpg);
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background-color: $black;
     background-position: center;
     background-size: cover;
@@ -41,6 +41,11 @@
     margin-bottom: 16px;
     margin-left: 16px;
     margin-right: 16px;
+    filter: grayscale(100%);
+    transition: all 0.5s;
+    &:hover {
+      filter: grayscale(0);
+    }
   }
 }
 
@@ -80,6 +85,11 @@
       &--gallery {
         width: 27%;
         margin-left: 0;
+        filter: grayscale(100%);
+        transition: all 0.5s;
+        &:hover {
+          filter: grayscale(0);
+        }
       }
     }
   }
@@ -122,6 +132,11 @@
         width: 25%;
         margin-bottom: 24px;
         margin-right: 24px;
+        filter: grayscale(100%);
+        transition: all 0.5s;
+        &:hover {
+          filter: grayscale(0);
+        }
       }
     }
     .section-image {
