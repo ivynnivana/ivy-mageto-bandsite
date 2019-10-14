@@ -24,13 +24,13 @@
   }
 }
 
-.section__image {
+.gallery-container {
   display: flex;
   flex-direction: column;
   background-color: $alabaster;
   width: 100%;
 
-  &--title {
+  &__title {
     font-family: "AvenirBold";
     padding-left: 16px;
     font-size: 1.5em;
@@ -75,10 +75,10 @@
     }
   }
   @include medium {
-    .section__image {
+    .gallery-container {
       padding: 0 3.125%;
 
-      &--title {
+      &__title {
         padding-left: 0;
         font-size: 2em;
       }
@@ -121,10 +121,10 @@
     }
   }
   @include large {
-    .section__image {
+    .gallery-container {
       padding: 0;
 
-      &--title {
+      &__title {
         font-size: 2em;
         margin-left: 180px;
       }
