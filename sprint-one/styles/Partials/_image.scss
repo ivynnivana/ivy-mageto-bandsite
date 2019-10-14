@@ -24,19 +24,19 @@
   }
 }
 
-.gallery-container {
+.section__image {
   display: flex;
   flex-direction: column;
   background-color: $alabaster;
   width: 100%;
 
-  &__title {
+  &--title {
     font-family: "AvenirBold";
     padding-left: 16px;
     font-size: 1.5em;
   }
 
-  &__gallery {
+  &--gallery {
     width: 90%;
     margin-bottom: 16px;
     margin-left: 16px;
@@ -75,14 +75,14 @@
     }
   }
   @include medium {
-    .gallery-container {
+    .section__image {
       padding: 0 3.125%;
 
-      &__title {
+      &--title {
         padding-left: 0;
         font-size: 2em;
       }
-      &__gallery {
+      &--gallery {
         width: 27%;
         margin-left: 0;
         filter: grayscale(100%);
@@ -121,10 +121,10 @@
     }
   }
   @include large {
-    .gallery-container {
+    .section__image {
       padding: 0;
 
-      &__title {
+      &--title {
         font-size: 2em;
         margin-left: 180px;
       }
