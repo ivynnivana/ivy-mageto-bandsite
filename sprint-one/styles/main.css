@@ -483,7 +483,7 @@ body {
   }
 }
 
-.about {
+.about-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,21 +494,13 @@ body {
   font-family: "AvenirRegular";
 }
 
-.about__title {
+.about-container__title {
   font-family: "AvenirBold";
   font-size: 0.8em;
   margin-left: 16px;
 }
 
-.about-image {
-  width: 90%;
-  height: 30vh;
-  margin-bottom: 16px;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.about__image {
+.about-container__image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,7 +509,21 @@ body {
           align-items: center;
 }
 
-.about-text {
+.about-container__image--wallpaper {
+  width: 90%;
+  height: 30vh;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.about-container__slogan {
+  font-family: "AvenirSemiBold";
+  margin: 16px;
+  width: 80%;
+}
+
+.about-container__slogan--text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,18 +533,12 @@ body {
   font-size: 0.8em;
 }
 
-.about__text {
-  font-family: "AvenirSemiBold";
-  margin: 16px;
-  width: 80%;
-}
-
-.about__text--title {
+.about-container__slogan--title {
   margin-left: 16px;
   font-family: "AvenirSemiBold";
 }
 
-.text-title {
+.about-container__text-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,7 +548,7 @@ body {
           flex-direction: column;
 }
 
-.text-title__left {
+.about-container__text-title--left {
   width: 90%;
   line-height: 150%;
   margin-left: 16px;
@@ -558,7 +558,7 @@ body {
   font-size: 0.7em;
 }
 
-.text-title__right {
+.about-container__text-title--right {
   width: 90%;
   line-height: 150%;
   margin-left: 16px;
@@ -569,34 +569,43 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .about {
+  .about-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     font-family: "AvenirRegular";
   }
-  .about__title {
+  .about-container__title {
     font-family: "AvenirBold";
     font-size: 1em;
     margin-left: 24px;
   }
-  .about-image {
+  .about-container__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-container__image--wallpaper {
     width: 90%;
     height: 370px;
     margin-bottom: 24px;
     margin-left: 24px;
     margin-right: 24px;
   }
-  .about__image {
+  .about-container__slogan {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    font-family: "AvenirSemiBold";
+    margin: 24px;
+    width: 80%;
+    font-size: 1.5em;
   }
-  .about-text {
+  .about-container__slogan--text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -605,25 +614,13 @@ body {
     width: 80%;
     font-size: 1em;
   }
-  .about__text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-family: "AvenirSemiBold";
-    margin: 24px;
-    width: 80%;
-    font-size: 1.5em;
-  }
-  .about__text--title {
+  .about-container__slogan--title {
     margin-left: 24px;
     margin-top: 10px;
     font-family: "AvenirSemiBold";
     font-size: 1.5em;
   }
-}
-
-@media only screen and (min-width: 768px) {
-  .text-title {
+  __text-title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -632,7 +629,7 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .text-title__left {
+  __text-title--left {
     width: 80%;
     font-size: 1em;
     line-height: 150%;
@@ -641,7 +638,7 @@ body {
     margin-bottom: 24px;
     margin-top: auto;
   }
-  .text-title__right {
+  __text-title--right {
     width: 80%;
     font-size: 1em;
     line-height: 150%;
@@ -653,25 +650,19 @@ body {
 }
 
 @media only screen and (min-width: 1024px) {
-  .about {
+  .about-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     font-family: "AvenirRegular";
   }
-  .about__title {
+  .about-container__title {
     font-family: "AvenirBold";
     font-size: 1em;
     margin-left: 180px;
   }
-  .about-image {
-    width: 62%;
-    height: 450px;
-    margin-bottom: 24px;
-    margin-left: 250px;
-  }
-  .about__image {
+  .about-container__image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -679,7 +670,23 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .about-text {
+  .about-container__image--wallpaper {
+    width: 62%;
+    height: 450px;
+    margin-bottom: 24px;
+    margin-left: 250px;
+  }
+  .about-container__slogan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "AvenirSemiBold";
+    margin-top: 10px;
+    margin-left: 250px;
+    width: 62%;
+    font-size: 1.5em;
+  }
+  .about-container__slogan--text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -688,26 +695,13 @@ body {
     width: 62%;
     font-size: 1em;
   }
-  .about__text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-family: "AvenirSemiBold";
-    margin-top: 10px;
-    margin-left: 250px;
-    width: 62%;
-    font-size: 1.5em;
-  }
-  .about__text--title {
+  .about-container__slogan--title {
     margin-left: 250px;
     margin-top: 10px;
     font-family: "AvenirSemiBold";
     font-size: 1.5em;
   }
-}
-
-@media only screen and (min-width: 1024px) {
-  .text-title {
+  .about-container__text-title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -716,14 +710,14 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .text-title__left {
+  .about-container__text-title--left {
     width: 30%;
     line-height: 200%;
     font-size: 0.8em;
     margin-left: 250px;
     margin-bottom: 24px;
   }
-  .text-title__right {
+  .about-container__text-title--right {
     width: 30%;
     line-height: 200%;
     font-size: 0.8em;
