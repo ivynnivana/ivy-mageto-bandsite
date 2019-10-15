@@ -19,22 +19,22 @@ body {
 /** media query for high pixel density dekstops **/
 @font-face {
   font-family: "AvenirRegular";
-  src: url(../../assets/fonts/AvenirRegular.otf);
+  src: url(../assets/fonts/AvenirRegular.otf);
 }
 
 @font-face {
   font-family: "AvenirSemiBold";
-  src: url(../../assets/fonts/AvenirSemiBold.otf);
+  src: url(../assets/fonts/AvenirSemiBold.otf);
 }
 
 @font-face {
   font-family: "AvenirBold";
-  src: url(../../assets/fonts/AvenirBold.otf);
+  src: url(../assets/fonts/AvenirBold.otf);
 }
 
 @font-face {
   font-family: "AvenirThin";
-  src: url(../../assets/fonts/AvenirThin.otf);
+  src: url(../assets/fonts/AvenirThin.otf);
 }
 
 .footer {
