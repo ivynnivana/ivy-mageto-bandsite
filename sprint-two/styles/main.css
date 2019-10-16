@@ -782,4 +782,33 @@ body {
   margin-left: 20px;
   width: 80%;
 }
+
+.comment-box {
+  padding: 1%;
+  width: 96%;
+  height: 600px;
+  border: 1px solid #323232;
+}
+
+.comment-box__title {
+  font-family: "AvenirBold";
+  font-size: 2.5em;
+}
+
+.comment-box__left {
+  width: 10%;
+  float: left;
+}
+
+.comment-box__right {
+  width: 85%;
+  float: left;
+  margin-left: 1%;
+}
+
+.comment-box__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
 /*# sourceMappingURL=main.css.map */
