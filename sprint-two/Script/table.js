@@ -51,11 +51,17 @@ function createTable(table, shows) {
       let cell = row.insertCell();
       let text = document.createTextNode(show[key]);
       cell.appendChild(text);
+      if (show[key] === show.DATES) {
+        cell.classList.add("shows-container__table--dates");
+      } else {
+        cell.classList.add("shows-container__table-cont");
+      }
     }
+
     let cell = row.insertCell();
-    row.classList.add("shows-container__table-button");
     let button = document.createElement("button");
-    button.textContent = "Buy Tickets";
+    button.classList.add("shows-container__table-button");
+    button.textContent = "BUY TICKETS";
     cell.appendChild(button);
   }
 }

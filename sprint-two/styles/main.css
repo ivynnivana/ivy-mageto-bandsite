@@ -783,6 +783,10 @@ body {
   width: 80%;
 }
 
+.shows-container__table {
+  display: none;
+}
+
 .shows-container__heading {
   font-family: "AvenirBold";
   font-size: 2em;
@@ -822,7 +826,7 @@ body {
   font-size: 12px;
   background-color: #323232;
   color: #ffffff;
-  width: 200px;
+  width: 288px;
   height: 48px;
   border-radius: 12px;
 }
@@ -832,13 +836,47 @@ body {
     display: none;
   }
   .shows-container__table {
-    margin-left: 200px;
-    margin-bottom: 40px;
+    display: table;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-right: 24px;
   }
   .shows-container__table-title {
     font-family: "AvenirSemiBold";
     color: #afafaf;
     font-size: 0.8em;
+    margin-right: 100px;
+  }
+  .shows-container__table-button {
+    font-size: 12px;
+    background-color: #323232;
+    color: #ffffff;
+    width: 160px;
+    height: 48px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+  }
+  .shows-container__table-cont {
+    font-family: "AvenirRegular";
+    font-size: 0.9em;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+  .shows-container__table--dates {
+    font-family: "AvenirSemiBold";
+    padding-right: 80px;
+    font-size: 0.9em;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .shows-container__events {
+    display: none;
+  }
+  .shows-container__table {
+    margin-left: 100px;
+    margin-right: 180px;
   }
 }
 

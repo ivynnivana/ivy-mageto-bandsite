@@ -44,6 +44,9 @@
   }
 }
 .shows-container {
+  &__table {
+    display: none;
+  }
   &__heading {
     font-family: "AvenirBold";
     font-size: 2em;
@@ -79,7 +82,7 @@
   font-size: 12px;
   background-color: $black;
   color: $white;
-  width: 200px;
+  width: 288px;
   height: 48px;
   border-radius: 12px;
 }
@@ -90,14 +93,50 @@
       display: none;
     }
     &__table {
-      margin-left: 200px;
-      margin-bottom: 40px;
+      display: table;
+      margin-left: 24px;
+      margin-right: 24px;
+      padding-right: 24px;
 
       &-title {
         font-family: "AvenirSemiBold";
         color: $silver;
         font-size: 0.8em;
+        margin-right: 100px;
       }
+      &-button {
+        font-size: 12px;
+        background-color: $black;
+        color: $white;
+        width: 160px;
+        height: 48px;
+        border-radius: 12px;
+        margin-bottom: 32px;
+      }
+      &-cont {
+        font-family: "AvenirRegular";
+        font-size: 0.9em;
+        padding-right: 40px;
+        padding-bottom: 40px;
+      }
+      &--dates {
+        font-family: "AvenirSemiBold";
+        padding-right: 80px;
+        font-size: 0.9em;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+
+@include large {
+  .shows-container {
+    &__events {
+      display: none;
+    }
+    &__table {
+      margin-left: 100px;
+      margin-right: 180px;
     }
   }
 }
