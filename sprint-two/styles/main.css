@@ -783,36 +783,68 @@ body {
   width: 80%;
 }
 
-.comment-box {
-  padding: 1%;
-  width: 96%;
-  height: 600px;
-  border: 1px solid #323232;
-}
-
-.comment-box__title {
+.shows-container__heading {
   font-family: "AvenirBold";
-  font-size: 2.5em;
+  font-size: 2em;
+  padding-left: 20px;
+  margin-top: 32px;
+  margin-bottom: 0;
 }
 
-.comment-box__left {
-  width: 10%;
-  float: left;
+.shows-container__events {
+  padding-left: 20px;
+  margin-top: 40px;
 }
 
-.comment-box__right {
-  border: 1px solid #323232;
-  float: left;
-  margin-left: 1%;
+.shows-container__events--title {
+  font-family: "AvenirSemiBold";
+  color: #afafaf;
+  font-size: 0.9em;
+  padding-bottom: 16px;
 }
 
-.comment-box__img {
-  width: 50px;
+.shows-container__events--dates {
+  font-family: "AvenirSemiBold";
+  padding-bottom: 24px;
+}
+
+.shows-container__events--venue {
+  font-family: "AvenirRegular";
+  padding-bottom: 24px;
+}
+
+.shows-container__events--location {
+  font-family: "AvenirRegular";
+  padding-bottom: 32px;
+}
+
+.show-button {
+  font-size: 12px;
+  background-color: #323232;
+  color: #ffffff;
+  width: 200px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .shows-container__events {
+    display: none;
+  }
+  .shows-container__table {
+    margin-left: 200px;
+    margin-bottom: 40px;
+  }
+  .shows-container__table-title {
+    font-family: "AvenirSemiBold";
+    color: #afafaf;
+    font-size: 0.8em;
+  }
+}
+
+.comment-img {
   height: 50px;
+  width: 50px;
   border-radius: 100%;
-}
-
-.clear {
-  clear: both;
 }
 /*# sourceMappingURL=main.css.map */

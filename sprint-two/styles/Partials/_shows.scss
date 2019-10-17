@@ -43,3 +43,61 @@
     }
   }
 }
+.shows-container {
+  &__heading {
+    font-family: "AvenirBold";
+    font-size: 2em;
+    padding-left: 20px;
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+  &__events {
+    padding-left: 20px;
+    margin-top: 40px;
+
+    &--title {
+      font-family: "AvenirSemiBold";
+      color: $silver;
+      font-size: 0.9em;
+      padding-bottom: 16px;
+    }
+    &--dates {
+      font-family: "AvenirSemiBold";
+      padding-bottom: 24px;
+    }
+    &--venue {
+      font-family: "AvenirRegular";
+      padding-bottom: 24px;
+    }
+    &--location {
+      font-family: "AvenirRegular";
+      padding-bottom: 32px;
+    }
+  }
+}
+.show-button {
+  font-size: 12px;
+  background-color: $black;
+  color: $white;
+  width: 200px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+@include medium {
+  .shows-container {
+    &__events {
+      display: none;
+    }
+    &__table {
+      margin-left: 200px;
+      margin-bottom: 40px;
+
+      &-title {
+        font-family: "AvenirSemiBold";
+        color: $silver;
+        font-size: 0.8em;
+      }
+    }
+  }
+}

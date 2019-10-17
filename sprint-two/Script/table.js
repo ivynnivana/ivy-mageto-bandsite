@@ -1,47 +1,50 @@
 const shows = [
   {
-    Date: "Mon Dec 17 2018",
-    Venue: "Ronald Lane",
-    Location: "San Francisco, CA"
+    DATES: "Mon Dec 17 2018",
+    VENUE: "Ronald Lane",
+    LOCATION: "San Francisco, CA"
   },
   {
-    Date: "Tue Jul 18 2019",
-    Venue: "Pier 3 East",
-    Location: "San Francisco, CA"
+    DATES: "Tue Jul 18 2019",
+    VENUE: "Pier 3 East",
+    LOCATION: "San Francisco, CA"
   },
   {
-    Date: "Fri July 22 2019",
-    Venue: "View Loungue",
-    Location: "San Francisco, CA"
+    DATES: "Fri July 22 2019",
+    VENUE: "View Loungue",
+    LOCATION: "San Francisco, CA"
   },
   {
-    Date: "Sat Aug 12 2019",
-    Venue: "Hyatt Agency",
-    Location: "San Francisco, CA"
+    DATES: "Sat Aug 12 2019",
+    VENUE: "Hyatt Agency",
+    LOCATION: "San Francisco, CA"
   },
   {
-    Date: "Fri Sep 05 2019",
-    Venue: "Moscow Center",
-    Location: "San Francisco, CA"
+    DATES: "Fri Sep 05 2019",
+    VENUE: "Moscow Center",
+    LOCATION: "San Francisco, CA"
   },
   {
-    Date: "Wed Aug 11 2019",
-    Venue: "Pres Club",
-    Location: "San Francisco, CA"
+    DATES: "Wed Aug 11 2019",
+    VENUE: "Pres Club",
+    LOCATION: "San Francisco, CA"
   }
 ];
 
 //function declaration
+function createTableHead(table, shows) {
+  let tHead = table.createTHead();
+  let row = tHead.insertRow();
+  for (let show of shows) {
+    row.classList.add("shows-container__table-title");
+    let th = document.createElement("th");
+    let text = document.createTextNode(show);
+    th.appendChild(text);
+    row.appendChild(th);
+  }
+}
 function createTable(table, shows) {
   for (let show of shows) {
-    let row = table.insertRow();
-    row.classList.add("shows-container__table-title");
-    for (key in show) {
-      let cell = row.insertCell();
-      let text = document.createTextNode(key);
-      cell.appendChild(text);
-    }
-
     row = table.insertRow();
     row.classList.add("shows-container__table-content");
     for (key in show) {
@@ -49,13 +52,18 @@ function createTable(table, shows) {
       let text = document.createTextNode(show[key]);
       cell.appendChild(text);
     }
+    let cell = row.insertCell();
+    row.classList.add("shows-container__table-button");
+    let button = document.createElement("button");
+    button.textContent = "Buy Tickets";
+    cell.appendChild(button);
   }
 }
 
 let table = document.querySelector("table");
-//console.log(table);
+console.log(table);
 let showKeys = Object.keys(shows[0]);
 
 // function invocation
-
+createTableHead(table, showKeys);
 createTable(table, shows);

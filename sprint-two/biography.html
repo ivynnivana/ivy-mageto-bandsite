@@ -84,15 +84,27 @@
     <div >
         <div class= comment-box>
             <h1 class=comment-box__title>Join the Conversation</h1>
-            <div class=comment-box__left><img class=comment-box__img src="./assets/images/Mohan-muruge.jpg"/> </div>
-            <div class=comment-box__right>
-                <span class=comment-box__right-name>Micheal Lyons</span>
-                <div class=comment-box__right-date>12/18/2018</div>
-                <p class=comment-box__right-comment>They BLEW the ROOF off at their last show,<br> once everyone started figuring out they were going. <br>This is still simply the
-                greatest opening of a <br> concert I have EVER witnessed.</p>
-            </div>
-            <div class=clear></div>
+            <form class=comment-form>
+                <div><img class=comment-img src="./assets/images/Mohan-muruge.jpg" alt="avatar" />
+                <div class=comment-container>
+                <label class=comment-name>NAME</label>
+                </div>
+                <div>
+                <input type="text" name="Name" placeholder="Name"/>
+                </div>
+                <div class=comment-container>
+                    <label class=comment-comment>COMMENT</label>
+                    <div>
+                    <input type="text" name="comment" placeholder="Add a new comment"/>
+                    </div>
+                </div>
+                <div>
+                    <button>COMMENT</button>
+                </div>
+            </form>
         </div>
+        <h3>current comments</h3>
+        <table></table>
     </div>
     <!--Footer Section-->
     <footer class=footer >
@@ -126,6 +138,7 @@
         </div>
         </div>
     </footer>
+    
 <script src="Script/comments.js"></script>
 </body>
 
