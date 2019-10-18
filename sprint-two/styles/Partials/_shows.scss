@@ -44,6 +44,13 @@
   }
 }
 .shows-container {
+  &__heading {
+    font-family: "AvenirBold";
+    font-size: 2em;
+    padding-left: 16px;
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
   &__table {
     &-title {
       display: none;
@@ -51,8 +58,31 @@
     &-content {
       display: flex;
       flex-direction: column;
+      padding-left: 16px;
+      margin-top: 40px;
+    }
+    &-button {
+      padding: 12px 28px;
+      border-radius: 12px;
+      color: $white;
+      background-color: $black;
+      width: 288px;
+      height: 48px;
+      font-size: 15px;
     }
   }
+}
+.container-other {
+  margin-bottom: 16px;
+  font-family: "AvenirSemiBold";
+  color: $silver;
+}
+.table-dates {
+  margin-bottom: 24px;
+  font-family: "AvenirSemiBold";
+}
+.table-other {
+  margin-bottom: 24px;
 }
 
 @include medium {
@@ -99,6 +129,9 @@
     }
   }
   .shows-container {
+    &__heading {
+      padding-left: 24px;
+    }
     &__table {
       &-title {
         display: inline-block;
@@ -106,7 +139,38 @@
       &-content {
         display: flex;
         flex-direction: row;
+        padding-left: 24px;
+        justify-content: space-between;
+        width: 100%;
+      }
+      &-title {
+        padding-left: 20px;
+      }
+      &-button {
+        width: 20vw;
+        height: 48px;
+        border: 0;
       }
     }
+  }
+  .container-other {
+    display: none;
+  }
+  .table-other {
+    text-align: left;
+    width: 17vw;
+    margin-right: 24px;
+    margin-left: 24px;
+    padding: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+  }
+  .table-dates {
+    box-sizing: border-box;
+    width: 20vw;
+    margin-right: 24px;
+    padding: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
   }
 }

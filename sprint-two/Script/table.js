@@ -56,14 +56,15 @@ function createTable(table, shows) {
       let text = document.createTextNode(key);
       let textTwo = document.createTextNode(show[key]);
       cell.appendChild(text);
-      if (key === key.DATE) {
-        cell.classList.add("shows-container__table--dates");
-      } else {
-        cell.classList.add("shows-container__table--venue");
-      }
-      cellTwo.appendChild(textTwo);
-    }
+      cell.classList.add("container-other");
 
+      cellTwo.appendChild(textTwo);
+      if (show[key] === show.DATE) {
+        cellTwo.classList.add("table-dates");
+      } else {
+        cellTwo.classList.add("table-other");
+      }
+    }
     let rowTwo = table.insertRow();
     let cell = row.insertCell();
     let button = document.createElement("button");
