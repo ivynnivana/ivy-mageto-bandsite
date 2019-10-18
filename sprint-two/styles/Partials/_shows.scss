@@ -44,9 +44,6 @@
   }
 }
 .shows-container {
-  &__table {
-    display: none;
-  }
   &__heading {
     font-family: "AvenirBold";
     font-size: 2em;
@@ -88,21 +85,72 @@
 }
 
 @include medium {
+  .hero-two {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+      position: relative;
+      background-image: url(../assets/images/heroimagetwo.jpg);
+      width: 100%;
+      height: 670px;
+      background-color: $black;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      &--album {
+        align-items: center;
+        font-family: "AvenirSemiBold";
+        color: $white;
+        position: absolute;
+        margin-top: 96px;
+        font-size: 20px;
+        margin-left: 24px;
+      }
+
+      &--song {
+        align-items: center;
+        position: absolute;
+        width: 60%;
+        height: 135px;
+        margin-top: 500px;
+        margin-left: 24px;
+      }
+
+      &--text {
+        align-items: center;
+        font-family: "AvenirBold";
+        color: $white;
+        position: absolute;
+        margin-top: 130px;
+        font-size: 70px;
+        margin-left: 24px;
+        width: 80%;
+      }
+    }
+  }
+
   .shows-container {
     &__events {
       display: none;
     }
+
+    &__heading {
+      margin-left: 10px;
+      margin-bottom: 30px;
+    }
+
     &__table {
       display: table;
       margin-left: 24px;
-      margin-right: 24px;
-      padding-right: 24px;
+      margin-right: 0;
+      width: 95%;
 
       &-title {
         font-family: "AvenirSemiBold";
         color: $silver;
         font-size: 0.8em;
-        margin-right: 100px;
       }
       &-button {
         font-size: 12px;
@@ -121,11 +169,14 @@
       }
       &--dates {
         font-family: "AvenirSemiBold";
-        padding-right: 80px;
+        padding-right: 40px;
         font-size: 0.9em;
         padding-bottom: 40px;
       }
     }
+  }
+  th {
+    padding-right: 130px;
   }
 }
 

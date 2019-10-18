@@ -783,10 +783,6 @@ body {
   width: 80%;
 }
 
-.shows-container__table {
-  display: none;
-}
-
 .shows-container__heading {
   font-family: "AvenirBold";
   font-size: 2em;
@@ -832,20 +828,75 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .hero-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-two__image {
+    position: relative;
+    background-image: url(../assets/images/heroimagetwo.jpg);
+    width: 100%;
+    height: 670px;
+    background-color: #323232;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .hero-two__image--album {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "AvenirSemiBold";
+    color: #ffffff;
+    position: absolute;
+    margin-top: 96px;
+    font-size: 20px;
+    margin-left: 24px;
+  }
+  .hero-two__image--song {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    width: 60%;
+    height: 135px;
+    margin-top: 500px;
+    margin-left: 24px;
+  }
+  .hero-two__image--text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "AvenirBold";
+    color: #ffffff;
+    position: absolute;
+    margin-top: 130px;
+    font-size: 70px;
+    margin-left: 24px;
+    width: 80%;
+  }
   .shows-container__events {
     display: none;
+  }
+  .shows-container__heading {
+    margin-left: 10px;
+    margin-bottom: 30px;
   }
   .shows-container__table {
     display: table;
     margin-left: 24px;
-    margin-right: 24px;
-    padding-right: 24px;
+    margin-right: 0;
+    width: 95%;
   }
   .shows-container__table-title {
     font-family: "AvenirSemiBold";
     color: #afafaf;
     font-size: 0.8em;
-    margin-right: 100px;
   }
   .shows-container__table-button {
     font-size: 12px;
@@ -864,9 +915,12 @@ body {
   }
   .shows-container__table--dates {
     font-family: "AvenirSemiBold";
-    padding-right: 80px;
+    padding-right: 40px;
     font-size: 0.9em;
     padding-bottom: 40px;
+  }
+  th {
+    padding-right: 130px;
   }
 }
 
