@@ -44,51 +44,19 @@
   }
 }
 .shows-container {
-  &__heading {
-    font-family: "AvenirBold";
-    font-size: 2em;
-    padding-left: 20px;
-    margin-top: 32px;
-    margin-bottom: 0;
-  }
-  &__events {
-    padding-left: 20px;
-    margin-top: 40px;
-
-    &--title {
-      font-family: "AvenirSemiBold";
-      color: $silver;
-      font-size: 0.9em;
-      padding-bottom: 16px;
+  &__table {
+    &-title {
+      display: none;
     }
-    &--dates {
-      font-family: "AvenirSemiBold";
-      padding-bottom: 24px;
-    }
-    &--venue {
-      font-family: "AvenirRegular";
-      padding-bottom: 24px;
-    }
-    &--location {
-      font-family: "AvenirRegular";
-      padding-bottom: 32px;
+    &-content {
+      display: flex;
+      flex-direction: column;
     }
   }
-}
-.show-button {
-  font-size: 12px;
-  background-color: $black;
-  color: $white;
-  width: 288px;
-  height: 48px;
-  border-radius: 12px;
 }
 
 @include medium {
   .hero-two {
-    display: flex;
-    flex-direction: column;
-
     &__image {
       position: relative;
       background-image: url(../assets/images/heroimagetwo.jpg);
@@ -130,64 +98,15 @@
       }
     }
   }
-
   .shows-container {
-    &__events {
-      display: none;
-    }
-
-    &__heading {
-      margin-left: 10px;
-      margin-bottom: 30px;
-    }
-
     &__table {
-      display: table;
-      margin-left: 24px;
-      margin-right: 0;
-      width: 95%;
-
       &-title {
-        font-family: "AvenirSemiBold";
-        color: $silver;
-        font-size: 0.8em;
+        display: inline-block;
       }
-      &-button {
-        font-size: 12px;
-        background-color: $black;
-        color: $white;
-        width: 160px;
-        height: 48px;
-        border-radius: 12px;
-        margin-bottom: 32px;
+      &-content {
+        display: flex;
+        flex-direction: row;
       }
-      &-cont {
-        font-family: "AvenirRegular";
-        font-size: 0.9em;
-        padding-right: 40px;
-        padding-bottom: 40px;
-      }
-      &--dates {
-        font-family: "AvenirSemiBold";
-        padding-right: 40px;
-        font-size: 0.9em;
-        padding-bottom: 40px;
-      }
-    }
-  }
-  th {
-    padding-right: 130px;
-  }
-}
-
-@include large {
-  .shows-container {
-    &__events {
-      display: none;
-    }
-    &__table {
-      margin-left: 100px;
-      margin-right: 180px;
     }
   }
 }
