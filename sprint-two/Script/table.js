@@ -38,14 +38,17 @@ function createTable(table, shows) {
   let rowOneCellOne = rowOne.insertCell();
   let rowOneTextOne = document.createTextNode("DATES");
   rowOneCellOne.appendChild(rowOneTextOne);
+  rowOneCellOne.classList.add("title-dates");
 
   let rowOneCellTwo = rowOne.insertCell();
   let rowOneTextTwo = document.createTextNode("VENUE");
   rowOneCellTwo.appendChild(rowOneTextTwo);
+  rowOneCellTwo.classList.add("title-venue");
 
   let rowOneCellThree = rowOne.insertCell();
   let rowOneTextThree = document.createTextNode("LOCATION");
   rowOneCellThree.appendChild(rowOneTextThree);
+  rowOneCellThree.classList.add("title-location");
 
   for (show of shows) {
     let row = table.insertRow();

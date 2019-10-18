@@ -145,6 +145,8 @@
       }
       &-title {
         padding-left: 20px;
+        font-family: "AvenirSemiBold";
+        color: $silver;
       }
       &-button {
         width: 20vw;
@@ -152,6 +154,9 @@
         border: 0;
       }
     }
+  }
+  table {
+    margin-top: 30px;
   }
   .container-other {
     display: none;
@@ -172,5 +177,35 @@
     padding: 0;
     margin-bottom: 0;
     padding-top: 10px;
+  }
+  .title-dates {
+    padding-right: 20.5vw;
+  }
+  .title-venue {
+    padding-right: 17vw;
+  }
+}
+
+@include large {
+  .hero-two {
+    &__image {
+      height: 700px;
+
+      &--album {
+        margin-top: 160px;
+        margin-left: 180px;
+      }
+      &--text {
+        font-size: 65px;
+        margin-top: 190px;
+        margin-left: 180px;
+      }
+      &--song {
+        width: 436px;
+        height: 146px;
+        margin-left: 600px;
+        margin-bottom: 700px;
+      }
+    }
   }
 }

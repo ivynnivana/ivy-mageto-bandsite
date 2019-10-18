@@ -18,3 +18,20 @@ const comments = [
       "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!"
   }
 ];
+let form = document.querySelector(".comment-form");
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let newObject = {
+    name: "",
+    comment: ""
+  };
+
+  let newName = e.target.name.value;
+  let newComment = e.target.comment.value;
+  newObject.name = newName;
+  newObject.comment = newComment;
+  console.log(newObject);
+  comments.push(newObject);
+  console.log(comments);
+});
