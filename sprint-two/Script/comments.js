@@ -31,12 +31,12 @@ form.addEventListener("submit", function(e) {
   let newObject = {
     name: "",
     comment: "",
-    todaysDate: ""
+    date: todaysDate
   };
 
   let newName = e.target.name.value;
   let newComment = e.target.comment.value;
-  // when pushing objects, we use the name of the item (.name) in the object to push it into the object
+  //  we use the name of the item (.name) in the object to push it into the object
   newObject.name = newName;
   newObject.comment = newComment;
   //when pushing objects into an Array, we use the .push
@@ -71,6 +71,10 @@ function createComments(form, comments) {
     divElement.appendChild(nameElement);
     nameElement.innerText = comments[i].name;
     // innerText allows you to insert a text between tags like you would in HTML but now for Java
+    let dateElement = document.createElement("h3");
+    divElement.appendChild(dateElement);
+    dateElement.innerText = comments[i].date;
+
     let commentElement = document.createElement("p");
     divElement.appendChild(commentElement);
     commentElement.innerText = comments[i].comment;
@@ -78,3 +82,4 @@ function createComments(form, comments) {
 }
 
 // function invocation
+createComments(form, comments);
