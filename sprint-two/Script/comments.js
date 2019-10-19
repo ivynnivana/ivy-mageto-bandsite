@@ -22,16 +22,59 @@ let form = document.querySelector(".comment-form");
 form.addEventListener("submit", function(e) {
   e.preventDefault();
 
+  let d = new Date();
+  let today = d.getDate();
+  let month = d.getMonth() + 1;
+  let year = d.getFullYear();
+  let todaysDate = today + "/" + month + "/" + year;
+
   let newObject = {
     name: "",
-    comment: ""
+    comment: "",
+    todaysDate: ""
   };
 
   let newName = e.target.name.value;
   let newComment = e.target.comment.value;
+  // when pushing objects, we use the name of the item (.name) in the object to push it into the object
   newObject.name = newName;
   newObject.comment = newComment;
-  console.log(newObject);
+  //when pushing objects into an Array, we use the .push
   comments.push(newObject);
-  console.log(comments);
+
+  let commentSection = document.querySelector(".comment-output");
+  for (i = 0; i < comments.length; i++) {
+    let divElement = document.createElement("div");
+    commentSection.appendChild(divElement);
+
+    let nameElement = document.createElement("h3");
+    divElement.appendChild(nameElement);
+    nameElement.innerText = comments[i].name;
+    // innerText allows you to insert a text between tags like you would in HTML but now for Java
+
+    let dateElement = document.createElement("h3");
+    divElement.appendChild(dateElement);
+    dateElement.innerText = comments[i].date;
+
+    let commentElement = document.createElement("p");
+    divElement.appendChild(commentElement);
+    commentElement.innerText = comments[i].comment;
+  }
 });
+
+function createComments(form, comments) {
+  for (i = 0; i < comments.length; i++) {
+    let divElement = document.createElement("div");
+    form.appendChild(divElement);
+
+    let nameElement = document.createElement("h3");
+    divElement.appendChild(nameElement);
+    nameElement.innerText = comments[i].name;
+    // innerText allows you to insert a text between tags like you would in HTML but now for Java
+    let commentElement = document.createElement("p");
+    divElement.appendChild(commentElement);
+    commentElement.innerText = comments[i].comment;
+  }
+}
+
+// function invocation
