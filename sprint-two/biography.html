@@ -82,21 +82,24 @@
     </div>
     <!--comments section-->
     <div >
-        <div class= comment-box>
-            <h1 class=comment-box__title>Join the Conversation</h1>
-            <form class=comment-form>
-                <img class=comment-img src="./assets/images/Mohan-muruge.jpg" alt="avatar" />
-                <div class=comment-container>
-                <label class=comment-name>NAME</label>
-                <input type="text" name="name" value="" placeholder="Mohan Muruge" />
+        <div>
+            <h1 class=comment__title>Join the Conversation</h1>
+            <form class=comment__form>
+                
+                <img class=comment__img src="./assets/images/Mohan-muruge.jpg" alt="avatar" />
+                
+                <div class=comment__name>
+                <label class=comment__container-name>NAME</label>
+                <input class=comment__name-input type="text" name="name" value="" placeholder="Mohan Muruge" />
                 </div>
-                <div class=comment-container>
-                    <label class=comment-comment>COMMENT</label>
-                    <input type="text" name="comment" value="" placeholder="Add a new comment" />
+
+                <div class=comment__text>
+                    <label class=comment__container-text>COMMENT</label>
+                    <input class=comment__text-input type="text" name="comment" value="" placeholder="Add a new comment" />
                 </div>
                 <div>
-                    <button type="submit">COMMENT</button>
-                </div>
+                    <button class= comment-button type="submit" value="reset form">COMMENT</button>
+                </div> 
             </form>
         </div>
         

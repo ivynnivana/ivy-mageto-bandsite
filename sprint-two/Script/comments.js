@@ -18,7 +18,8 @@ const comments = [
       "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!"
   }
 ];
-let form = document.querySelector(".comment-form");
+
+let form = document.querySelector(".comment__form");
 form.addEventListener("submit", function(e) {
   e.preventDefault();
 
@@ -39,47 +40,41 @@ form.addEventListener("submit", function(e) {
   //  we use the name of the item (.name) in the object to push it into the object
   newObject.name = newName;
   newObject.comment = newComment;
-  //when pushing objects into an Array, we use the .push
-  comments.push(newObject);
+  //when pushing objects into an Array, we use the .push (here we added new objects to the array)
+  comments.unshift(newObject);
 
+  e.target.reset();
+
+  document.querySelector(".comment-output").innerHTML = "";
+
+  createComments(comments);
+});
+// blocks of code stored in functions can be re-used mulitple times
+function createComments(comments) {
   let commentSection = document.querySelector(".comment-output");
   for (i = 0; i < comments.length; i++) {
     let divElement = document.createElement("div");
     commentSection.appendChild(divElement);
+    divElement.classList.add("row-container");
 
     let nameElement = document.createElement("h3");
     divElement.appendChild(nameElement);
     nameElement.innerText = comments[i].name;
-    // innerText allows you to insert a text between tags like you would in HTML but now for Java
-
-    let dateElement = document.createElement("h3");
-    divElement.appendChild(dateElement);
-    dateElement.innerText = comments[i].date;
-
-    let commentElement = document.createElement("p");
-    divElement.appendChild(commentElement);
-    commentElement.innerText = comments[i].comment;
-  }
-});
-
-function createComments(form, comments) {
-  for (i = 0; i < comments.length; i++) {
-    let divElement = document.createElement("div");
-    form.appendChild(divElement);
-
-    let nameElement = document.createElement("h3");
-    divElement.appendChild(nameElement);
-    nameElement.innerText = comments[i].name;
+    nameElement.classList.add("name-container");
     // innerText allows you to insert a text between tags like you would in HTML but now for Java
     let dateElement = document.createElement("h3");
     divElement.appendChild(dateElement);
     dateElement.innerText = comments[i].date;
+    dateElement.classList.add("date-container");
 
     let commentElement = document.createElement("p");
     divElement.appendChild(commentElement);
     commentElement.innerText = comments[i].comment;
+    commentElement.classList.add("comment-container");
   }
 }
-
+//.innerText only accepts text content, but .innerHTML in addition to text, accepts elements.
+// adding "" to both of them changes them and makes them empty.
 // function invocation
-createComments(form, comments);
+
+createComments(comments);
