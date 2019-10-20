@@ -37,10 +37,10 @@ form.addEventListener("submit", function(e) {
 
   let newName = e.target.name.value;
   let newComment = e.target.comment.value;
-  //  we use the name of the item (.name) in the object to push it into the object
+  //  we use the name of the item (.name) in the object to push or unshift it into the object
   newObject.name = newName;
   newObject.comment = newComment;
-  //when pushing objects into an Array, we use the .push (here we added new objects to the array)
+  //when pushing objects into an Array, we use the .push to add them to the bottom of the array(here we added new objects to the array)
   comments.unshift(newObject);
 
   e.target.reset();
