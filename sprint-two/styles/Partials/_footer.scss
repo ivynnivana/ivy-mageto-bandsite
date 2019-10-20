@@ -47,7 +47,8 @@
 @include medium {
   .footer {
     box-sizing: border-box;
-    height: 50vh;
+    height: 40vh;
+    width: 110%;
 
     &-container {
       display: flex;

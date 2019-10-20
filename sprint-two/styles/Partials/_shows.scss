@@ -27,7 +27,7 @@
       position: absolute;
       width: 80%;
       height: 135px;
-      margin-top: 350px;
+      margin-top: 400px;
       margin-left: 20px;
     }
 
@@ -190,6 +190,7 @@
   .hero-two {
     &__image {
       height: 700px;
+      width: 100%;
 
       &--album {
         margin-top: 160px;
@@ -201,11 +202,32 @@
         margin-left: 180px;
       }
       &--song {
-        width: 436px;
+        width: 300px;
         height: 146px;
-        margin-left: 600px;
-        margin-bottom: 700px;
+        margin-left: 570px;
+        margin-top: 380px;
       }
     }
+  }
+
+  .shows-container {
+    &__heading {
+      padding-left: 90px;
+    }
+  }
+  .title-dates {
+    padding-right: 13vw;
+  }
+  .title-venue {
+    padding-right: 12.5vw;
+  }
+  table {
+    padding-left: 200px;
+  }
+
+  .table-dates,
+  .table-other {
+    margin-right: 0;
+    width: 15vw;
   }
 }

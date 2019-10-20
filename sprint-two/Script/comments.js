@@ -57,6 +57,10 @@ function createComments(comments) {
     commentSection.appendChild(divElement);
     divElement.classList.add("row-container");
 
+    let button = document.createElement("button");
+    divElement.appendChild(button);
+    button.classList.add("button-container");
+
     let nameElement = document.createElement("h3");
     divElement.appendChild(nameElement);
     nameElement.innerText = comments[i].name;
