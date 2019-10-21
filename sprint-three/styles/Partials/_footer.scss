@@ -1,0 +1,151 @@
+.footer {
+  color: $white;
+  background-color: $black;
+  height: 100vh;
+
+  &-title {
+    margin-left: 16px;
+    padding-top: 30px;
+    font-family: "AvenirBold";
+    font-size: 2em;
+  }
+  &-media {
+    margin-left: 16px;
+    margin-right: 25px;
+  }
+  &-logo {
+    display: none;
+  }
+}
+.address-one,
+.address-two,
+.address-three,
+.address-four {
+  margin-left: 16px;
+  margin-top: 40px;
+
+  &__name {
+    font-family: "AvenirSemiBold";
+    font-size: 0.8em;
+  }
+  &__location {
+    font-family: "AvenirThin";
+    font-size: 0.7em;
+  }
+}
+.address-four {
+  font-family: "AvenirThin";
+  font-size: 0.7em;
+}
+.address-mailto {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7em;
+  font-family: "AvenirThin";
+}
+
+@include medium {
+  .footer {
+    box-sizing: border-box;
+    height: 49vh;
+    width: 110%;
+
+    &-container {
+      display: flex;
+      padding-top: 20px;
+
+      &__nav {
+        margin-right: 105px;
+        margin-left: 90px;
+      }
+    }
+
+    &-title {
+      font-size: 1.5em;
+      padding-top: 0;
+      margin: 0;
+      padding-right: 10px;
+      padding-left: 24px;
+    }
+    &-media {
+      margin-right: 0;
+    }
+    &-logo {
+      display: flex;
+    }
+  }
+  .address-one,
+  .address-two,
+  .address-three {
+    display: inline-block;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 0;
+
+    &__name {
+      font-size: 0.9em;
+    }
+    &__location {
+      font-size: 0.9em;
+    }
+  }
+  .address-four {
+    font-size: 0.8em;
+    display: inline-block;
+    margin-left: 16px;
+    margin-top: 30px;
+  }
+  .address-mailto {
+    font-size: 0.8em;
+  }
+}
+@include large {
+  .footer {
+    &-container {
+      margin-left: 160px;
+
+      &__nav {
+        margin-right: 100px;
+      }
+    }
+    &-media {
+      margin-right: 40px;
+    }
+    &-title {
+      margin-right: 10px;
+    }
+  }
+  .copyright-container {
+    margin-left: 160px;
+  }
+
+  .address-one {
+    margin-left: 180px;
+    margin-top: 20px;
+  }
+}
+@include huge {
+  .footer {
+    &-container {
+      margin-left: 160px;
+
+      &__nav {
+        margin-right: 270px;
+      }
+    }
+    &-media {
+      margin-right: 40px;
+    }
+    &-title {
+      margin-right: 90px;
+    }
+  }
+  .copyright-container {
+    margin-left: 160px;
+  }
+
+  .address-one {
+    margin-left: 180px;
+    margin-top: 20px;
+  }
+}

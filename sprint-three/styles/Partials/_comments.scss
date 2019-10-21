@@ -1,0 +1,413 @@
+.comment__form {
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.comment__title {
+  font-size: 1.5em;
+  margin-top: 32px;
+  margin-left: 16px;
+  font-family: "AvenirBold";
+}
+.comment__img {
+  width: 16vw;
+  height: 16vw;
+  border-radius: 100%;
+  margin: 15px 0;
+}
+.comment__name {
+  margin: 0 10vw 0 5.5vw;
+  display: flex;
+  flex-direction: column;
+}
+.comment__container-name,
+.comment__container-text {
+  color: $silver;
+  font-family: "AvenirSemiBold";
+}
+.comment__name-input {
+  border: 0.5vw solid $black;
+  border-radius: 1.2vw;
+  width: 50vw;
+  height: 1.5vw;
+  margin-top: 3vw;
+  padding: 4vw;
+}
+.comment__text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 9vw 5.5vw;
+}
+.comment__text-input {
+  width: 60vw;
+  height: 25vw;
+  box-sizing: border-box;
+  border: 0.3vw solid $mercury;
+  border-radius: 1.2vw;
+  background-color: $alabaster;
+  resize: none;
+  margin-top: 20px;
+  padding: 1vw 4vw 15vw 4vw;
+}
+.comment-button {
+  border-radius: 1.5vw;
+  color: $white;
+  background-color: $black;
+  font-size: 4vw;
+  cursor: pointer;
+  width: 60vw;
+  margin: 5vw 9.5vw 6vw;
+  padding: 20px 26px;
+}
+
+.row-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 4vw;
+  border-top: 0.2vw solid $mercury;
+  border-bottom: 0.2vw solid $mercury;
+}
+.button-container {
+  width: 16vw;
+  height: 16vw;
+  border-radius: 100%;
+  margin: 15px 16px;
+  background-color: $silver;
+}
+.name-container {
+  width: 100px;
+  font-size: 0.95em;
+  font-family: "AvenirSemiBold";
+  margin-top: 24px;
+  padding-bottom: 0;
+}
+.date-container {
+  color: $silver;
+  font-size: 0.8em;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+.comment-container {
+  font-family: "Avenirthin";
+  font-size: 0.8em;
+  width: 65%;
+  margin-left: 84px;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+@include medium {
+  .comment__form {
+    margin: 15px;
+    display: flex;
+  }
+  .comment__title {
+    font-size: 2.5em;
+    margin-top: 32px;
+    margin-left: 24px;
+    font-family: "AvenirBold";
+  }
+  .comment__img {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 100%;
+    margin: 5.5vw 0;
+  }
+  .comment__name {
+    margin: 0 10vw 0 3.5vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .comment__container-name,
+  .comment__container-text {
+    color: $silver;
+    font-family: "AvenirSemiBold";
+  }
+  .comment__name-input {
+    border: 0.5vw solid $black;
+    border-radius: 1.2vw;
+    width: 50vw;
+    height: 1.5vw;
+    margin-top: 3vw;
+    padding: 4vw;
+    font-size: 1em;
+  }
+  .comment__text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 9vw 5.5vw;
+  }
+  .comment__text-input {
+    width: 60vw;
+    height: 10vw;
+    box-sizing: border-box;
+    border: 0.3vw solid $mercury;
+    border-radius: 1.2vw;
+    background-color: $alabaster;
+    resize: none;
+    margin-top: 20px;
+    padding: 4vw 4vw 15vw 4vw;
+    font-size: 1em;
+  }
+  .comment-button {
+    border-radius: 1.5vw;
+    color: $white;
+    background-color: $black;
+    font-size: 3vw;
+    cursor: pointer;
+    width: 30vw;
+    margin: 1vw 9.5vw 6vw;
+    padding: 20px 26px;
+  }
+
+  .row-container {
+    width: 100%;
+    display: flex;
+
+    flex-direction: row;
+    margin-left: 40px;
+    margin-right: 24px;
+    font-size: 4vw;
+    border-top: 0.2vw solid $mercury;
+    border-bottom: 0.2vw solid $mercury;
+  }
+  .button-container {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 100%;
+    background-color: $silver;
+  }
+  .name-container {
+    width: 170px;
+    font-size: 0.7em;
+    font-family: "AvenirSemiBold";
+    margin-top: 24px;
+    padding-bottom: 0;
+  }
+  .date-container {
+    color: $silver;
+    font-size: 0.7em;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+  .comment-container {
+    font-family: "Avenirthin";
+    font-size: 0.8em;
+    width: 75%;
+    margin-left: 86px;
+    margin-top: 0;
+  }
+}
+
+@include large {
+  .comment__form {
+    margin: 15px;
+    display: flex;
+  }
+  .comment__title {
+    font-size: 2em;
+    margin-top: 32px;
+    margin-left: 180px;
+    font-family: "AvenirBold";
+  }
+  .comment__img {
+    width: 6.5vw;
+    height: 6.5vw;
+    border-radius: 100%;
+    margin: 5.5vw 20px 0;
+  }
+  .comment__name {
+    margin: 20px 40px 15px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .comment__container-name,
+  .comment__container-text {
+    color: $silver;
+    font-family: "AvenirSemiBold";
+    margin-left: 10px;
+  }
+  .comment__name-input {
+    border: 0.5vw solid $black;
+    border-radius: 1.2vw;
+    width: 50vw;
+    height: 1.5vw;
+    margin-top: 3vw;
+    padding: 4vw;
+    font-size: 1em;
+  }
+  .comment__text {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px 25px 20px;
+  }
+  .comment__text-input {
+    width: 60vw;
+    height: 10vw;
+    box-sizing: border-box;
+    border: 0.3vw solid $mercury;
+    border-radius: 1.2vw;
+    background-color: $alabaster;
+    resize: none;
+    margin-top: 20px;
+    padding: 4vw 4vw 15vw 4vw;
+    font-size: 1em;
+  }
+  .comment-output {
+    margin-left: 200px;
+  }
+  .comment-button {
+    border-radius: 1.5vw;
+    color: $white;
+    background-color: $black;
+    font-size: 3vw;
+    cursor: pointer;
+    width: 30vw;
+    margin: 20px 40px 25px 20px;
+    padding: 20px 26px;
+  }
+
+  .row-container {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 24px;
+    font-size: 2.5vw;
+    border-top: 0.2vw solid $mercury;
+    border-bottom: 0.2vw solid $mercury;
+  }
+  .button-container {
+    width: 6vw;
+    height: 6vw;
+    margin-right: 35px;
+    border-radius: 100%;
+    background-color: $silver;
+  }
+  .name-container {
+    width: 170px;
+    font-size: 0.65em;
+    font-family: "AvenirSemiBold";
+    margin-top: 24px;
+  }
+  .date-container {
+    color: $silver;
+    font-size: 0.5em;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+  .comment-container {
+    font-family: "Avenirthin";
+    font-size: 0.6em;
+    width: 80%;
+    margin-left: 110px;
+    margin-top: 0;
+  }
+}
+
+@include huge {
+  .comment__form {
+    margin: 15px;
+    display: flex;
+  }
+  .comment__title {
+    font-size: 2em;
+    margin-top: 32px;
+    margin-left: 180px;
+    font-family: "AvenirBold";
+  }
+  .comment__img {
+    width: 6.5vw;
+    height: 6.5vw;
+    border-radius: 100%;
+    margin: 5.5vw 50px 0;
+  }
+  .comment__name {
+    margin: 20px 15px 15px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comment__container-text {
+    color: $silver;
+    font-family: "AvenirSemiBold";
+    margin-left: 10px;
+  }
+  .comment__name-input {
+    border: 0.5vw solid $black;
+    border-radius: 1.2vw;
+    width: 55vw;
+    height: 1.5vw;
+    margin-top: 3vw;
+    margin-right: 35px;
+    padding: 4vw;
+    font-size: 1.5em;
+  }
+  .comment__text {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 35px 25px 40px;
+  }
+  .comment__text-input {
+    width: 65vw;
+    height: 1vw;
+    box-sizing: border-box;
+    border: 0.3vw solid $mercury;
+    border-radius: 1.2vw;
+    background-color: $alabaster;
+    margin-top: 30px;
+    padding: 4vw 4vw 15vw 3vw;
+    font-size: 1.5em;
+  }
+  .comment-output {
+    margin-left: 100px;
+  }
+  .comment-button {
+    border-radius: 1.5vw;
+    color: $white;
+    background-color: $black;
+    font-size: 3vw;
+    cursor: pointer;
+    width: 30vw;
+    margin: 20px 40px 25px 20px;
+    padding: 20px 26px;
+  }
+
+  .row-container {
+    width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    font-size: 4vw;
+    border-top: 0.2vw solid $mercury;
+    border-bottom: 0.2vw solid $mercury;
+  }
+  .button-container {
+    width: 6vw;
+    height: 6vw;
+    margin-right: 35px;
+    margin-left: 145px;
+    border-radius: 100%;
+    background-color: $silver;
+  }
+  .name-container {
+    width: 170px;
+    font-size: 0.5em;
+    font-family: "AvenirSemiBold";
+    margin-top: 24px;
+  }
+  .date-container {
+    color: $silver;
+    font-size: 0.5em;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+  .comment-container {
+    font-family: "Avenirthin";
+    font-size: 10%;
+    width: 80%;
+    margin-left: 265px;
+    margin-top: 0;
+  }
+}
