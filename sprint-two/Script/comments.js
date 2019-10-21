@@ -1,3 +1,7 @@
+let something = axios
+  .get("https://project-1-api.herokuapp.com/comments?api_key=ivy")
+  .then(response => console.log(response.data));
+
 const comments = [
   {
     name: "Micheal Lyons",
@@ -15,7 +19,7 @@ const comments = [
     name: "Theodore Duncan",
     date: "11/15/2018",
     comment:
-      "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!"
+      "How can someone be so good!!! You can tell he lives for this and loves to do it every day. rEverytime I see him I feel instantly happy! He’s definitely my favorite ever!"
   }
 ];
 

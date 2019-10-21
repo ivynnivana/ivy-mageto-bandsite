@@ -5,7 +5,7 @@
   &__image {
     position: relative;
     background-image: url(../assets/images/heroimage.jpg);
-    width: 100%;
+    width: 100vw;
     height: 30vh;
     background-color: $black;
     background-position: center;
@@ -27,8 +27,8 @@
 .section__image {
   display: flex;
   flex-direction: column;
+  width: 100vw;
   background-color: $alabaster;
-  width: 100%;
 
   &--title {
     font-family: "AvenirBold";
@@ -124,6 +124,7 @@
   @include large {
     .section__image {
       padding: 0;
+      width: 100vw;
 
       &--title {
         font-size: 2em;
@@ -142,6 +143,7 @@
     }
     .section-image {
       margin-left: 180px;
+      width: 100vw;
     }
   }
 }

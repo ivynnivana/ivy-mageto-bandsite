@@ -1,3 +1,7 @@
+let something = axios
+  .get("https://project-1-api.herokuapp.com/showdates?api_key=ivy")
+  .then(response => console.log(response.data));
+
 let shows = [
   {
     DATE: "Mon Dec 17 2018",
