@@ -47,10 +47,10 @@ form.addEventListener("submit", function(e) {
 
   document.querySelector(".comment-output").innerHTML = "";
 
-  createComments(comments);
+  displayComment(comments);
 });
 // blocks of code stored in functions can be re-used mulitple times
-function createComments(comments) {
+function displayComment(comments) {
   let commentSection = document.querySelector(".comment-output");
   for (i = 0; i < comments.length; i++) {
     let divElement = document.createElement("div");
@@ -81,4 +81,4 @@ function createComments(comments) {
 // adding "" to both of them changes them and makes them empty.
 // function invocation
 
-createComments(comments);
+displayComment(comments);
