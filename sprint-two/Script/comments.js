@@ -1,7 +1,3 @@
-let something = axios
-  .get("https://project-1-api.herokuapp.com/comments?api_key=ivy")
-  .then(response => console.log(response.data));
-
 const comments = [
   {
     name: "Micheal Lyons",
