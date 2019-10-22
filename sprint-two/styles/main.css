@@ -1126,11 +1126,10 @@ body {
 
 .comment-container {
   font-family: "Avenirthin";
+  text-align: left;
   font-size: 0.8em;
-  width: 65%;
-  margin-left: 84px;
-  margin-bottom: 24px;
-  margin-top: 0;
+  width: 100vw;
+  margin: 0 0 2vw 16vw;
 }
 
 @media only screen and (min-width: 768px) {
