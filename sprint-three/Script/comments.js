@@ -1,23 +1,59 @@
-const comments = [
-  {
-    name: "Micheal Lyons",
-    date: "12/18/2018",
-    comment:
-      "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed."
-  },
-  {
-    name: "Gary Wong",
-    date: "12/12/2018",
-    comment:
-      "Every time I see him shred I feel so motivated to get off my couch and hop on my board. He’s so talented! I wish I can ride like him one day so I can really enjoy myself!"
-  },
-  {
-    name: "Theodore Duncan",
-    date: "11/15/2018",
-    comment:
-      "How can someone be so good!!! You can tell he lives for this and loves to do it every day. rEverytime I see him I feel instantly happy! He’s definitely my favorite ever!"
+function displayComment(comments) {
+  let commentSection = document.querySelector(".comment-output");
+  for (i = 0; i < comments.length; i++) {
+    let divElement = document.createElement("div");
+    commentSection.appendChild(divElement);
+    divElement.classList.add("row-container");
+
+    let button = document.createElement("button");
+    divElement.appendChild(button);
+    button.classList.add("button-container");
+
+    let nameElement = document.createElement("h3");
+    divElement.appendChild(nameElement);
+    nameElement.innerText = comments[i].name;
+    nameElement.classList.add("name-container");
+    // innerText allows you to insert a text between tags like you would in HTML but now for Java
+    let dateElement = document.createElement("h3");
+    divElement.appendChild(dateElement);
+    dateElement.innerText = comments[i].date;
+    dateElement.classList.add("date-container");
+
+    let commentElement = document.createElement("p");
+    divElement.appendChild(commentElement);
+    commentElement.innerText = comments[i].comment;
+    commentElement.classList.add("comment-container");
   }
-];
+}
+let something = axios
+  .get("https://project-1-api.herokuapp.com/comments?api_key=ivy")
+  .then(response => {
+    console.log(response.data);
+    return response.data;
+  })
+  .then(response => {
+    displayComment(response);
+  });
+// const comments = [
+//   {
+//     name: "Micheal Lyons",
+//     date: "12/18/2018",
+//     comment:
+//       "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed."
+//   },
+//   {
+//     name: "Gary Wong",
+//     date: "12/12/2018",
+//     comment:
+//       "Every time I see him shred I feel so motivated to get off my couch and hop on my board. He’s so talented! I wish I can ride like him one day so I can really enjoy myself!"
+//   },
+//   {
+//     name: "Theodore Duncan",
+//     date: "11/15/2018",
+//     comment:
+//       "How can someone be so good!!! You can tell he lives for this and loves to do it every day. rEverytime I see him I feel instantly happy! He’s definitely my favorite ever!"
+//   }
+// ];
 
 let form = document.querySelector(".comment__form");
 form.addEventListener("submit", function(e) {
@@ -81,4 +117,4 @@ function displayComment(comments) {
 // adding "" to both of them changes them and makes them empty.
 // function invocation
 
-displayComment(comments);
+// displayComment(comments);
