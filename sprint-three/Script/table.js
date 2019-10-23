@@ -1,47 +1,47 @@
-function createTable(table, shows) {
-  let rowOne = table.insertRow();
-  rowOne.classList.add("shows-container__table-title");
-  let rowOneCellOne = rowOne.insertCell();
-  let rowOneTextOne = document.createTextNode("DATES");
-  rowOneCellOne.appendChild(rowOneTextOne);
-  rowOneCellOne.classList.add("title-dates");
+// function createTable(table, shows) {
+//   let rowOne = table.insertRow();
+//   rowOne.classList.add("shows-container__table-title");
+//   let rowOneCellOne = rowOne.insertCell();
+//   let rowOneTextOne = document.createTextNode("DATES");
+//   rowOneCellOne.appendChild(rowOneTextOne);
+//   rowOneCellOne.classList.add("title-dates");
 
-  let rowOneCellTwo = rowOne.insertCell();
-  let rowOneTextTwo = document.createTextNode("VENUE");
-  rowOneCellTwo.appendChild(rowOneTextTwo);
-  rowOneCellTwo.classList.add("title-venue");
+//   let rowOneCellTwo = rowOne.insertCell();
+//   let rowOneTextTwo = document.createTextNode("VENUE");
+//   rowOneCellTwo.appendChild(rowOneTextTwo);
+//   rowOneCellTwo.classList.add("title-venue");
 
-  let rowOneCellThree = rowOne.insertCell();
-  let rowOneTextThree = document.createTextNode("LOCATION");
-  rowOneCellThree.appendChild(rowOneTextThree);
-  rowOneCellThree.classList.add("title-location");
+//   let rowOneCellThree = rowOne.insertCell();
+//   let rowOneTextThree = document.createTextNode("LOCATION");
+//   rowOneCellThree.appendChild(rowOneTextThree);
+//   rowOneCellThree.classList.add("title-location");
 
-  for (show of shows) {
-    let row = table.insertRow();
-    row.classList.add("shows-container__table-content");
-    for (key in show) {
-      let cell = row.insertCell();
-      let cellTwo = row.insertCell();
-      let text = document.createTextNode(key);
-      let textTwo = document.createTextNode(show[key]);
-      cell.appendChild(text);
-      cell.classList.add("container-other");
+//   for (show of shows) {
+//     let row = table.insertRow();
+//     row.classList.add("shows-container__table-content");
+//     for (key in show) {
+//       let cell = row.insertCell();
+//       let cellTwo = row.insertCell();
+//       let text = document.createTextNode(key);
+//       let textTwo = document.createTextNode(show[key]);
+//       cell.appendChild(text);
+//       cell.classList.add("container-other");
 
-      cellTwo.appendChild(textTwo);
-      if (show[key] === show.DATE) {
-        cellTwo.classList.add("table-dates");
-      } else {
-        cellTwo.classList.add("table-other");
-      }
-    }
-    let rowTwo = table.insertRow();
-    let cell = row.insertCell();
-    let button = document.createElement("button");
-    button.classList.add("shows-container__table-button");
-    button.textContent = "BUY TICKETS";
-    cell.appendChild(button);
-  }
-}
+//       cellTwo.appendChild(textTwo);
+//       if (show[key] === show.DATE) {
+//         cellTwo.classList.add("table-dates");
+//       } else {
+//         cellTwo.classList.add("table-other");
+//       }
+//     }
+//     let rowTwo = table.insertRow();
+//     let cell = row.insertCell();
+//     let button = document.createElement("button");
+//     button.classList.add("shows-container__table-button");
+//     button.textContent = "BUY TICKETS";
+//     cell.appendChild(button);
+//   }
+// }
 let something = axios
   .get("https://project-1-api.herokuapp.com/showdates?api_key=ivy")
   .then(response => {
@@ -49,7 +49,7 @@ let something = axios
     return response.data;
   })
   .then(response => {
-    createTable(table, response);
+    createTable(response);
   });
 
 // let shows = [
@@ -86,52 +86,50 @@ let something = axios
 // ];
 
 //function declaration
-function createTable(table, shows) {
-  let rowOne = table.insertRow();
-  rowOne.classList.add("shows-container__table-title");
-  let rowOneCellOne = rowOne.insertCell();
-  let rowOneTextOne = document.createTextNode("DATES");
-  rowOneCellOne.appendChild(rowOneTextOne);
-  rowOneCellOne.classList.add("title-dates");
+function createTable(shows) {
+  let table = document.querySelector(".table");
 
-  let rowOneCellTwo = rowOne.insertCell();
-  let rowOneTextTwo = document.createTextNode("VENUE");
-  rowOneCellTwo.appendChild(rowOneTextTwo);
-  rowOneCellTwo.classList.add("title-venue");
+  for (let i = 0; i < shows.length; i++) {
+    let containerOne = document.createElement("div");
+    containerOne.classList.add("container-div");
+    table.appendChild(containerOne);
 
-  let rowOneCellThree = rowOne.insertCell();
-  let rowOneTextThree = document.createTextNode("LOCATION");
-  rowOneCellThree.appendChild(rowOneTextThree);
-  rowOneCellThree.classList.add("title-location");
+    let dateTitle = document.createElement("p");
+    containerOne.appendChild(dateTitle);
+    dateTitle.innerText = "DATE";
+    dateTitle.classList.add("date-title");
 
-  for (show of shows) {
-    let row = table.insertRow();
-    row.classList.add("shows-container__table-content");
-    for (key in show) {
-      let cell = row.insertCell();
-      let cellTwo = row.insertCell();
-      let text = document.createTextNode(key);
-      let textTwo = document.createTextNode(show[key]);
-      cell.appendChild(text);
-      cell.classList.add("container-other");
+    let date = document.createElement("p");
+    containerOne.appendChild(date);
+    date.innerText = shows[i].date;
+    date.classList.add("dates-cell");
 
-      cellTwo.appendChild(textTwo);
-      if (show[key] === show.DATE) {
-        cellTwo.classList.add("table-dates");
-      } else {
-        cellTwo.classList.add("table-other");
-      }
-    }
-    let rowTwo = table.insertRow();
-    let cell = row.insertCell();
+    let venueTitle = document.createElement("p");
+    containerOne.appendChild(venueTitle);
+    venueTitle.innerText = "VENUE";
+    venueTitle.classList.add("venue-title");
+
+    let venue = document.createElement("p");
+    containerOne.appendChild(venue);
+    venue.innerText = shows[i].place;
+    venue.classList.add("venue-cell");
+
+    let locationTitle = document.createElement("p");
+    containerOne.appendChild(locationTitle);
+    locationTitle.innerText = "LOCATION";
+    locationTitle.classList.add("location-title");
+
+    let location = document.createElement("p");
+    containerOne.appendChild(location);
+    location.innerText = shows[i].location;
+    location.classList.add("location-cell");
+
     let button = document.createElement("button");
-    button.classList.add("shows-container__table-button");
-    button.textContent = "BUY TICKETS";
-    cell.appendChild(button);
+    containerOne.appendChild(button);
+    button.innerText = "BUY TICKETS";
+    button.classList.add("button-cell");
   }
 }
-
-let table = document.querySelector("table");
 
 //function invocation
 

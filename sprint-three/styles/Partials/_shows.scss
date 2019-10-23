@@ -43,48 +43,43 @@
     }
   }
 }
-.shows-container {
-  &__heading {
-    font-family: "AvenirBold";
-    font-size: 2em;
-    padding-left: 16px;
-    margin-top: 32px;
-    margin-bottom: 0;
-  }
-  &__table {
-    &-title {
-      display: none;
-    }
-    &-content {
-      display: flex;
-      flex-direction: column;
-      padding-left: 16px;
-      margin-top: 40px;
-      border-bottom: 0.2vw solid $mercury;
-      padding-bottom: 10px;
-    }
-    &-button {
-      padding: 12px 28px;
-      border-radius: 12px;
-      color: $white;
-      background-color: $black;
-      width: 288px;
-      height: 48px;
-      font-size: 15px;
-    }
-  }
+.container-div {
+  padding-left: 16px;
+  border-bottom: 0.2vw solid $mercury;
+  padding-bottom: 16px;
 }
-.container-other {
-  margin-bottom: 16px;
+.show-heading {
+  font-family: "AvenirBold";
+  font-size: 2em;
+  padding-left: 16px;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.date-heading,
+.venue-heading,
+.location-heading {
+  display: none;
+}
+
+.date-title,
+.venue-title,
+.location-title {
   font-family: "AvenirSemiBold";
   color: $silver;
 }
-.table-dates {
-  margin-bottom: 24px;
+
+.dates-cell {
   font-family: "AvenirSemiBold";
 }
-.table-other {
-  margin-bottom: 24px;
+.button-cell {
+  padding: 12px 28px;
+  border-radius: 12px;
+  color: $white;
+  background-color: $black;
+  width: 288px;
+  height: 48px;
+  font-size: 15px;
 }
 
 @include medium {
@@ -130,64 +125,106 @@
       }
     }
   }
-  .shows-container {
-    &__heading {
-      padding-left: 24px;
-    }
-    &__table {
-      &-title {
-        display: inline-block;
-      }
-      &-content {
-        display: flex;
-        flex-direction: row;
-        margin-top: 25px;
-        padding-left: 24px;
-        justify-content: space-between;
-        width: 100%;
-      }
-      &-title {
-        padding-left: 20px;
-        font-family: "AvenirSemiBold";
-        color: $silver;
-      }
-      &-button {
-        width: 20vw;
-        height: 48px;
-        border: 0;
-      }
-    }
+
+  .container-div {
+    padding-left: 24px;
+    border-bottom: 0.2vw solid $mercury;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: row;
   }
-  table {
-    margin-top: 30px;
+
+  .show-heading {
+    font-family: "AvenirBold";
+    font-size: 2.5em;
+    padding-left: 24px;
+    margin-top: 32px;
+    margin-bottom: 0;
   }
-  .container-other {
+  .headings {
+    padding-left: 24px;
+  }
+  .date-heading,
+  .venue-heading,
+  .location-heading {
+    display: inline-block;
+  }
+
+  .date-title,
+  .venue-title,
+  .location-title {
     display: none;
   }
-  .table-other {
+
+  .dates-cell {
+    width: 155px;
+  }
+  .venue-cell {
     text-align: left;
-    width: 17vw;
-    margin-right: 24px;
-    margin-left: 24px;
-    padding: 0;
-    margin-bottom: 0;
-    padding-top: 10px;
   }
-  .table-dates {
-    box-sizing: border-box;
-    width: 20vw;
-    margin-right: 24px;
-    padding: 0;
-    margin-bottom: 0;
-    padding-top: 10px;
-  }
-  .title-dates {
-    padding-right: 20.5vw;
-  }
-  .title-venue {
-    padding-right: 17vw;
+  .button-cell {
+    width: 200px;
+    height: 60px;
   }
 }
+//   .shows-container {
+//     &__heading {
+//       padding-left: 24px;
+//     }
+//     &__table {
+//       &-title {
+//         display: inline-block;
+//       }
+//       &-content {
+//         display: flex;
+//         flex-direction: row;
+//         margin-top: 25px;
+//         padding-left: 24px;
+//         justify-content: space-between;
+//         width: 100%;
+//       }
+//       &-title {
+//         padding-left: 20px;
+//         font-family: "AvenirSemiBold";
+//         color: $silver;
+//       }
+//       &-button {
+//         width: 20vw;
+//         height: 48px;
+//         border: 0;
+//       }
+//     }
+//   }
+//   table {
+//     margin-top: 30px;
+//   }
+//   .container-other {
+//     display: none;
+//   }
+//   .table-other {
+//     text-align: left;
+//     width: 17vw;
+//     margin-right: 24px;
+//     margin-left: 24px;
+//     padding: 0;
+//     margin-bottom: 0;
+//     padding-top: 10px;
+//   }
+//   .table-dates {
+//     box-sizing: border-box;
+//     width: 20vw;
+//     margin-right: 24px;
+//     padding: 0;
+//     margin-bottom: 0;
+//     padding-top: 10px;
+//   }
+//   .title-dates {
+//     padding-right: 20.5vw;
+//   }
+//   .title-venue {
+//     padding-right: 17vw;
+//   }
+// }
 
 @include large {
   .hero-two {

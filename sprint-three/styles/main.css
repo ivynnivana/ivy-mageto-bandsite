@@ -225,12 +225,12 @@ body {
   font-size: 15px;
   margin-right: 15vw;
   margin-left: 15vw;
+  width: 160px;
 }
 
 .header__nav:hover {
   color: #ffffff;
   border-bottom: 3px solid #ffffff;
-  padding-bottom: 20px;
 }
 
 .nav-container {
@@ -264,9 +264,6 @@ body {
   .header__nav {
     font-size: 15px;
     margin: 0 30px;
-  }
-  .header__nav:hover {
-    padding-bottom: 32px;
   }
   .nav-container {
     -webkit-box-align: center;
@@ -788,7 +785,13 @@ body {
   width: 80%;
 }
 
-.shows-container__heading {
+.container-div {
+  padding-left: 16px;
+  border-bottom: 0.2vw solid #e1e1e1;
+  padding-bottom: 16px;
+}
+
+.show-heading {
   font-family: "AvenirBold";
   font-size: 2em;
   padding-left: 16px;
@@ -796,25 +799,24 @@ body {
   margin-bottom: 0;
 }
 
-.shows-container__table-title {
+.date-heading,
+.venue-heading,
+.location-heading {
   display: none;
 }
 
-.shows-container__table-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-left: 16px;
-  margin-top: 40px;
-  border-bottom: 0.2vw solid #e1e1e1;
-  padding-bottom: 10px;
+.date-title,
+.venue-title,
+.location-title {
+  font-family: "AvenirSemiBold";
+  color: #afafaf;
 }
 
-.shows-container__table-button {
+.dates-cell {
+  font-family: "AvenirSemiBold";
+}
+
+.button-cell {
   padding: 12px 28px;
   border-radius: 12px;
   color: #ffffff;
@@ -822,21 +824,6 @@ body {
   width: 288px;
   height: 48px;
   font-size: 15px;
-}
-
-.container-other {
-  margin-bottom: 16px;
-  font-family: "AvenirSemiBold";
-  color: #afafaf;
-}
-
-.table-dates {
-  margin-bottom: 24px;
-  font-family: "AvenirSemiBold";
-}
-
-.table-other {
-  margin-bottom: 24px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -883,13 +870,10 @@ body {
     margin-left: 24px;
     width: 80%;
   }
-  .shows-container__heading {
+  .container-div {
     padding-left: 24px;
-  }
-  .shows-container__table-title {
-    display: inline-block;
-  }
-  .shows-container__table-content {
+    border-bottom: 0.2vw solid #e1e1e1;
+    padding-bottom: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -897,52 +881,36 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 25px;
+  }
+  .show-heading {
+    font-family: "AvenirBold";
+    font-size: 2.5em;
     padding-left: 24px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 0;
   }
-  .shows-container__table-title {
-    padding-left: 20px;
-    font-family: "AvenirSemiBold";
-    color: #afafaf;
+  .headings {
+    padding-left: 24px;
   }
-  .shows-container__table-button {
-    width: 20vw;
-    height: 48px;
-    border: 0;
+  .date-heading,
+  .venue-heading,
+  .location-heading {
+    display: inline-block;
   }
-  table {
-    margin-top: 30px;
-  }
-  .container-other {
+  .date-title,
+  .venue-title,
+  .location-title {
     display: none;
   }
-  .table-other {
+  .dates-cell {
+    width: 155px;
+  }
+  .venue-cell {
     text-align: left;
-    width: 17vw;
-    margin-right: 24px;
-    margin-left: 24px;
-    padding: 0;
-    margin-bottom: 0;
-    padding-top: 10px;
   }
-  .table-dates {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 20vw;
-    margin-right: 24px;
-    padding: 0;
-    margin-bottom: 0;
-    padding-top: 10px;
-  }
-  .title-dates {
-    padding-right: 20.5vw;
-  }
-  .title-venue {
-    padding-right: 17vw;
+  .button-cell {
+    width: 200px;
+    height: 60px;
   }
 }
 
@@ -1104,6 +1072,7 @@ body {
   height: 13vw;
   border-radius: 100vw;
   background-color: #e1e1e1;
+  background-image: url;
 }
 
 .name-container {
