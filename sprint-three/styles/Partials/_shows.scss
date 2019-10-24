@@ -132,6 +132,7 @@
     padding-bottom: 16px;
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
   }
 
   .show-heading {
@@ -148,8 +149,15 @@
   .venue-heading,
   .location-heading {
     display: inline-block;
+    font-family: "AvenirSemiBold";
+    color: $silver;
   }
-
+  .date-heading {
+    margin-right: 14vw;
+  }
+  .venue-heading {
+    margin-right: 22.5vw;
+  }
   .date-title,
   .venue-title,
   .location-title {
@@ -157,74 +165,23 @@
   }
 
   .dates-cell {
-    width: 155px;
+    width: 140px;
+    margin-right: 4vw;
   }
   .venue-cell {
     text-align: left;
+    width: 200px;
+    margin-right: 5vw;
   }
   .button-cell {
-    width: 200px;
+    width: 150px;
     height: 60px;
   }
+  .location-cell {
+    width: 140px;
+    margin-right: 6vw;
+  }
 }
-//   .shows-container {
-//     &__heading {
-//       padding-left: 24px;
-//     }
-//     &__table {
-//       &-title {
-//         display: inline-block;
-//       }
-//       &-content {
-//         display: flex;
-//         flex-direction: row;
-//         margin-top: 25px;
-//         padding-left: 24px;
-//         justify-content: space-between;
-//         width: 100%;
-//       }
-//       &-title {
-//         padding-left: 20px;
-//         font-family: "AvenirSemiBold";
-//         color: $silver;
-//       }
-//       &-button {
-//         width: 20vw;
-//         height: 48px;
-//         border: 0;
-//       }
-//     }
-//   }
-//   table {
-//     margin-top: 30px;
-//   }
-//   .container-other {
-//     display: none;
-//   }
-//   .table-other {
-//     text-align: left;
-//     width: 17vw;
-//     margin-right: 24px;
-//     margin-left: 24px;
-//     padding: 0;
-//     margin-bottom: 0;
-//     padding-top: 10px;
-//   }
-//   .table-dates {
-//     box-sizing: border-box;
-//     width: 20vw;
-//     margin-right: 24px;
-//     padding: 0;
-//     margin-bottom: 0;
-//     padding-top: 10px;
-//   }
-//   .title-dates {
-//     padding-right: 20.5vw;
-//   }
-//   .title-venue {
-//     padding-right: 17vw;
-//   }
-// }
 
 @include large {
   .hero-two {
@@ -249,25 +206,24 @@
       }
     }
   }
-
-  .shows-container {
-    &__heading {
-      padding-left: 90px;
-    }
+  .headings {
+    margin-left: 180px;
   }
-  .title-dates {
-    padding-right: 13vw;
-  }
-  .title-venue {
-    padding-right: 12.5vw;
-  }
-  table {
-    padding-left: 200px;
+  .table {
+    margin-left: 180px;
   }
 
-  .table-dates,
-  .table-other {
-    margin-right: 0;
-    width: 15vw;
+  .container-div {
+    margin-top: 10px;
+  }
+  .date-heading {
+    margin-right: 12vw;
+  }
+  .venue-heading {
+    margin-right: 18vw;
+  }
+  .button-cell {
+    width: 175px;
+    height: 60px;
   }
 }

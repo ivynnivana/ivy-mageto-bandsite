@@ -881,6 +881,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 10px;
   }
   .show-heading {
     font-family: "AvenirBold";
@@ -896,6 +897,14 @@ body {
   .venue-heading,
   .location-heading {
     display: inline-block;
+    font-family: "AvenirSemiBold";
+    color: #afafaf;
+  }
+  .date-heading {
+    margin-right: 14vw;
+  }
+  .venue-heading {
+    margin-right: 22.5vw;
   }
   .date-title,
   .venue-title,
@@ -903,14 +912,21 @@ body {
     display: none;
   }
   .dates-cell {
-    width: 155px;
+    width: 140px;
+    margin-right: 4vw;
   }
   .venue-cell {
     text-align: left;
+    width: 200px;
+    margin-right: 5vw;
   }
   .button-cell {
-    width: 200px;
+    width: 150px;
     height: 60px;
+  }
+  .location-cell {
+    width: 140px;
+    margin-right: 6vw;
   }
 }
 
@@ -934,22 +950,24 @@ body {
     margin-left: 570px;
     margin-top: 380px;
   }
-  .shows-container__heading {
-    padding-left: 90px;
+  .headings {
+    margin-left: 180px;
   }
-  .title-dates {
-    padding-right: 13vw;
+  .table {
+    margin-left: 180px;
   }
-  .title-venue {
-    padding-right: 12.5vw;
+  .container-div {
+    margin-top: 10px;
   }
-  table {
-    padding-left: 200px;
+  .date-heading {
+    margin-right: 12vw;
   }
-  .table-dates,
-  .table-other {
-    margin-right: 0;
-    width: 15vw;
+  .venue-heading {
+    margin-right: 18vw;
+  }
+  .button-cell {
+    width: 175px;
+    height: 60px;
   }
 }
 
