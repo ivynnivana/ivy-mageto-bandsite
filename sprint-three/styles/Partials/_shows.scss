@@ -227,3 +227,56 @@
     height: 60px;
   }
 }
+
+@include huge {
+  .hero-two {
+    &__image {
+      height: 700px;
+      width: 100%;
+
+      &--album {
+        margin-top: 160px;
+        margin-left: 180px;
+      }
+      &--text {
+        font-size: 65px;
+        margin-top: 190px;
+        margin-left: 180px;
+      }
+      &--song {
+        width: 300px;
+        height: 146px;
+        margin-left: 570px;
+        margin-top: 380px;
+      }
+    }
+  }
+  .show-heading {
+    font-family: "AvenirBold";
+    font-size: 3em;
+    padding-left: 170px;
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+  .headings {
+    margin-left: 400px;
+  }
+  .table {
+    margin-left: 400px;
+  }
+
+  .container-div {
+    margin-top: 10px;
+    width: 90%;
+  }
+  .date-heading {
+    margin-right: 9.5vw;
+  }
+  .venue-heading {
+    margin-right: 14.5vw;
+  }
+  .button-cell {
+    width: 235px;
+    height: 60px;
+  }
+}

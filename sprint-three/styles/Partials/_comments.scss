@@ -96,9 +96,13 @@
 }
 .date-container {
   color: $silver;
-  font-size: 4vw;
+  font-size: 1em;
   margin: 0.5vw 1vw;
   justify-self: end;
+}
+
+.id-container {
+  display: none;
 }
 .comment-container {
   font-family: "Avenirthin";
