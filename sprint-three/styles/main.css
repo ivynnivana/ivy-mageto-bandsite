@@ -1139,7 +1139,6 @@ body {
   height: 13vw;
   border-radius: 100vw;
   background-color: #e1e1e1;
-  background-image: url;
 }
 
 .name-container {
@@ -1259,6 +1258,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-bottom: 0;
     margin-left: 90px;
     margin-right: 24px;
     font-size: 3.5vw;
@@ -1276,12 +1276,12 @@ body {
     font-size: 0.7em;
     font-family: "AvenirSemiBold";
     margin-top: 24px;
+    margin-bottom: 0;
     padding-bottom: 0;
   }
   .date-container {
     color: #afafaf;
-    font-size: 0.7em;
-    margin-top: 30px;
+    font-size: 0.6em;
     margin-left: 5px;
   }
   .comment-container {
@@ -1295,25 +1295,27 @@ body {
 
 @media only screen and (min-width: 1024px) {
   .comment__form {
-    margin: 15px;
+    height: 50vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .comment__title {
     font-size: 2em;
     margin-top: 32px;
     margin-left: 180px;
+    margin-bottom: 5vw;
     font-family: "AvenirBold";
   }
   .comment__img {
     width: 6.5vw;
     height: 6.5vw;
     border-radius: 100%;
-    margin: 5.5vw 20px 0;
   }
   .comment__name {
-    margin: 20px 40px 15px 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1326,15 +1328,14 @@ body {
   .comment__container-text {
     color: #afafaf;
     font-family: "AvenirSemiBold";
-    margin-left: 10px;
   }
   .comment__name-input {
     border: 0.5vw solid #323232;
     border-radius: 1.2vw;
-    width: 50vw;
-    height: 1.5vw;
+    width: 460px;
+    height: 48px;
     margin-top: 3vw;
-    padding: 4vw;
+    padding: 0;
     font-size: 1em;
   }
   .comment__text {
@@ -1345,11 +1346,11 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 20px 40px 25px 20px;
+    margin-bottom: 30px;
   }
   .comment__text-input {
-    width: 60vw;
-    height: 10vw;
+    width: 460px;
+    height: 30px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: 0.3vw solid #e1e1e1;
@@ -1357,11 +1358,10 @@ body {
     background-color: #fafafa;
     resize: none;
     margin-top: 20px;
-    padding: 4vw 4vw 15vw 4vw;
     font-size: 1em;
   }
   .comment-output {
-    margin-left: 200px;
+    margin-left: 150px;
   }
   .comment-button {
     border-radius: 1.5vw;
@@ -1370,8 +1370,8 @@ body {
     font-size: 3vw;
     cursor: pointer;
     width: 30vw;
-    margin: 20px 40px 25px 20px;
-    padding: 20px 26px;
+    margin-bottom: 40px;
+    padding: 10px 16px;
   }
   .row-container {
     width: 50vw;

@@ -85,7 +85,7 @@
   height: 13vw;
   border-radius: 100vw;
   background-color: $mercury;
-  background-image: url;
+  
 }
 .name-container {
   margin: 3vw 7vw 3vw 3vw;
@@ -182,6 +182,7 @@
     width: 80vw;
     display: flex;
     flex-direction: row;
+    padding-bottom: 0;
     margin-left: 90px;
     margin-right: 24px;
     font-size: 3.5vw;
@@ -199,12 +200,12 @@
     font-size: 0.7em;
     font-family: "AvenirSemiBold";
     margin-top: 24px;
+    margin-bottom: 0;
     padding-bottom: 0;
   }
   .date-container {
     color: $silver;
-    font-size: 0.7em;
-    margin-top: 30px;
+    font-size: 0.6em;
     margin-left: 5px;
   }
   .comment-container {
@@ -218,23 +219,26 @@
 
 @include large {
   .comment__form {
-    margin: 15px;
+    // margin: 15px;
+    height: 50vw;
     display: flex;
+    justify-content: center;
   }
   .comment__title {
     font-size: 2em;
     margin-top: 32px;
     margin-left: 180px;
+    margin-bottom: 5vw;
     font-family: "AvenirBold";
   }
   .comment__img {
     width: 6.5vw;
     height: 6.5vw;
     border-radius: 100%;
-    margin: 5.5vw 20px 0;
+    // margin: 5.5vw 20px 0;
   }
   .comment__name {
-    margin: 20px 40px 15px 20px;
+    // margin: 20px 40px 15px 20px;
     display: flex;
     flex-direction: column;
   }
@@ -242,36 +246,36 @@
   .comment__container-text {
     color: $silver;
     font-family: "AvenirSemiBold";
-    margin-left: 10px;
+    // margin-left: 10px;
   }
   .comment__name-input {
     border: 0.5vw solid $black;
     border-radius: 1.2vw;
-    width: 50vw;
-    height: 1.5vw;
+    width: 460px;
+    height: 48px;
     margin-top: 3vw;
-    padding: 4vw;
+    padding: 0;
     font-size: 1em;
   }
   .comment__text {
     display: flex;
     flex-direction: column;
-    margin: 20px 40px 25px 20px;
+    margin-bottom: 30px;
   }
   .comment__text-input {
-    width: 60vw;
-    height: 10vw;
+    width: 460px;
+    height: 30px;
     box-sizing: border-box;
     border: 0.3vw solid $mercury;
     border-radius: 1.2vw;
     background-color: $alabaster;
     resize: none;
     margin-top: 20px;
-    padding: 4vw 4vw 15vw 4vw;
     font-size: 1em;
+    
   }
   .comment-output {
-    margin-left: 200px;
+    margin-left: 150px;
   }
   .comment-button {
     border-radius: 1.5vw;
@@ -280,8 +284,8 @@
     font-size: 3vw;
     cursor: pointer;
     width: 30vw;
-    margin: 20px 40px 25px 20px;
-    padding: 20px 26px;
+    margin-bottom: 40px;
+    padding: 10px 16px;
   }
 
   .row-container {

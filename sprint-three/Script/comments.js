@@ -59,7 +59,7 @@ function displayComment(comments) {
     nameElement.classList.add("name-container");
     // innerText allows you to insert a text between tags like you would in HTML but now for Java
     let ts = new Date(comments[i].timestamp).toLocaleDateString();
-
+    
     let dateElement = document.createElement("h3");
     divElement.appendChild(dateElement);
     dateElement.innerText = ts;
