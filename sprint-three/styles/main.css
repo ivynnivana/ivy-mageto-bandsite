@@ -40,7 +40,7 @@ body {
 .footer {
   color: #ffffff;
   background-color: #323232;
-  height: 100vh;
+  height: 130vh;
 }
 
 .footer-title {
@@ -1205,6 +1205,7 @@ body {
   .comment__container-text {
     color: #afafaf;
     font-family: "AvenirSemiBold";
+    font-size: 2vw;
   }
   .comment__name-input {
     border: 0.5vw solid #323232;
@@ -1213,7 +1214,7 @@ body {
     height: 1.5vw;
     margin-top: 3vw;
     padding: 4vw;
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .comment__text {
     display: -webkit-box;
@@ -1224,6 +1225,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 9vw 5.5vw;
+    font-size: 0.8em;
   }
   .comment__text-input {
     width: 60vw;
@@ -1249,7 +1251,7 @@ body {
     padding: 20px 26px;
   }
   .row-container {
-    width: 100%;
+    width: 80vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1257,9 +1259,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-left: 40px;
+    margin-left: 90px;
     margin-right: 24px;
-    font-size: 4vw;
+    font-size: 3.5vw;
     border-top: 0.2vw solid #e1e1e1;
     border-bottom: 0.2vw solid #e1e1e1;
   }
@@ -1284,8 +1286,8 @@ body {
   }
   .comment-container {
     font-family: "Avenirthin";
-    font-size: 0.8em;
-    width: 75%;
+    font-size: 0.6em;
+    width: 80vw;
     margin-left: 86px;
     margin-top: 0;
   }
