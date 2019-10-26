@@ -229,6 +229,7 @@
 }
 
 @include huge {
+  box-sizing: border-box;
   .hero-two {
     &__image {
       height: 700px;
@@ -267,13 +268,13 @@
 
   .container-div {
     margin-top: 10px;
-    width: 90%;
+    width: 804px;
   }
   .date-heading {
     margin-right: 9.5vw;
   }
   .venue-heading {
-    margin-right: 14.5vw;
+    margin-right: 13.2vw;
   }
   .button-cell {
     width: 235px;

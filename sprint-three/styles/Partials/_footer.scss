@@ -2,6 +2,7 @@
   color: $white;
   background-color: $black;
   height: 130vh;
+  width: 100%;
 
   &-title {
     margin-left: 16px;
@@ -48,7 +49,7 @@
   .footer {
     box-sizing: border-box;
     height: 49vh;
-    width: 110%;
+    // width: 110%;
 
     &-container {
       display: flex;

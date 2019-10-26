@@ -19,7 +19,7 @@ form.addEventListener("submit", function(e) {
   let newUser = {
     name: "",
     comment: ""
-    // timestamp: ""
+    
   };
 
   //  we use the name of the item (.name) in the object to push or unshift it into the object
@@ -58,11 +58,17 @@ function displayComment(comments) {
     nameElement.innerText = comments[i].name;
     nameElement.classList.add("name-container");
     // innerText allows you to insert a text between tags like you would in HTML but now for Java
-    let ts = new Date(comments[i].timestamp).toLocaleDateString();
+    let ts = new Date(comments[i].timestamp)
+    // let d = ts.toLocaleDateString();
+    let date = ts.getDate();
+    let month = ts.getMonth() + 1;
+    let year = ts.getFullYear();
+    let today = date + "/" + month + "/" + year;
+   
     
     let dateElement = document.createElement("h3");
     divElement.appendChild(dateElement);
-    dateElement.innerText = ts;
+    dateElement.innerText = today;
     dateElement.classList.add("date-container");
 
     let idElement = document.createElement("p");

@@ -6,9 +6,10 @@ body {
   margin: 0;
   font-family: "AvenirRegular", sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-* *:before,
+*, *:before,
 *:after {
   box-sizing: inherit;
 }
@@ -16,9 +17,9 @@ body {
 @import "./Partials/breakpoints";
 @import "./Partials/colors";
 @import "./Partials/font";
-@import "./Partials/footer";
 @import "./Partials/header";
 @import "./Partials/image";
 @import "./Partials/mainsection";
 @import "./Partials/shows";
 @import "./Partials/comments";
+@import "./Partials/footer";
