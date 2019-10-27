@@ -84,8 +84,9 @@
         font-size: 2em;
       }
       &--gallery {
-        width: 27%;
-        margin-left: 0;
+        width: 224px;
+        margin-left: 0px;
+        margin-right: 0px;
         filter: grayscale(100%);
         transition: all 0.5s;
         &:hover {

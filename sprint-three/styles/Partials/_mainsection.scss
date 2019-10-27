@@ -68,8 +68,33 @@
 
 @include medium {
   .about-container {
-    flex-direction: column;
     font-family: "AvenirRegular";
+    &__text{
+      &-title{
+        display: flex;
+      flex-direction: row;
+
+        &--left {
+          width: 50%;
+          font-size: 1em;
+          line-height: 150%;
+          margin-left: 24px;
+          margin-right: 24px;
+          margin-bottom: 24px;
+          margin-top: auto;
+        }
+        &--right {
+          width: 50%;
+          font-size: 1em;
+          line-height: 150%;
+          margin-left: 24px;
+          margin-right: 24px;
+          margin-bottom: 24px;
+          margin-top: auto;
+        }
+
+      }
+    }
 
     &__title {
       font-family: "AvenirBold";
@@ -99,6 +124,7 @@
 
       &--text {
         display: flex;
+       
         font-family: "AvenirSemiBold";
         margin: 24px;
         width: 80%;
@@ -113,12 +139,9 @@
       }
     }
   }
-  &__text-title {
-    display: flex;
-    flex-direction: row;
 
     &--left {
-      width: 80%;
+      width: 50%;
       font-size: 1em;
       line-height: 150%;
       margin-left: 24px;
@@ -127,7 +150,7 @@
       margin-top: auto;
     }
     &--right {
-      width: 80%;
+      width: 50%;
       font-size: 1em;
       line-height: 150%;
       margin-left: 24px;
@@ -136,7 +159,7 @@
       margin-top: auto;
     }
   }
-}
+
 
 @include large {
   .about-container {
