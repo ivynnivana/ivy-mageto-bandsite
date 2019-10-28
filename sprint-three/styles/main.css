@@ -843,8 +843,8 @@ body {
 }
 
 @media only screen and (min-width: 1440px) {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  /* -webkit-box-sizing: border-box;
+          box-sizing: border-box; */
   .hero-two__image {
     height: 700px;
     width: 100%;
