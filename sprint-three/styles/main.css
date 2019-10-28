@@ -261,6 +261,11 @@ body {
 @media only screen and (min-width: 768px) and (min-width: 768px) {
   .section__image {
     padding: 0 3.125%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .section__image--title {
     padding-left: 0;
@@ -317,10 +322,11 @@ body {
   .section__image {
     padding: 0;
     width: 100%;
+    margin-left: 130px;
   }
   .section__image--title {
     font-size: 2em;
-    margin-left: 180px;
+    margin-left: 50px;
   }
   .section__image--gallery {
     width: 25%;
@@ -544,7 +550,7 @@ body {
   }
   .about-container__image--wallpaper {
     width: 62%;
-    height: 450px;
+    height: 400px;
     margin-bottom: 24px;
     margin-left: 250px;
   }
@@ -831,10 +837,10 @@ body {
     margin-top: 10px;
   }
   .date-heading {
-    margin-right: 11vw;
+    margin-right: 107px;
   }
   .venue-heading {
-    margin-right: 16.5vw;
+    margin-right: 175px;
   }
   .button-cell {
     width: 175px;
@@ -843,8 +849,8 @@ body {
 }
 
 @media only screen and (min-width: 1440px) {
-  /* -webkit-box-sizing: border-box;
-          box-sizing: border-box; */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   .hero-two__image {
     height: 700px;
     width: 100%;
@@ -882,10 +888,10 @@ body {
     width: 804px;
   }
   .date-heading {
-    margin-right: 9.5vw;
+    margin-right: 100px;
   }
   .venue-heading {
-    margin-right: 13.2vw;
+    margin-right: 157px;
   }
   .button-cell {
     width: 235px;
@@ -1175,6 +1181,7 @@ body {
 @media only screen and (min-width: 1024px) {
   .comment__form {
     height: 37vw;
+    margin-right: 100px;
   }
   .comment__title {
     font-size: 2em;
@@ -1197,21 +1204,20 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 0 0 20px;
-    height: 12vh;
   }
   .comment__container-name,
   .comment__container-text {
     color: #afafaf;
     font-family: "AvenirSemiBold";
-    font-size: 1.2vh;
+    font-size: 13px;
   }
   .comment__name-input {
     border: 0.5vw solid #323232;
     border-radius: 1.2vw;
     width: 460px;
     height: 60px;
-    padding: 0;
-    font-size: 1em;
+    padding: 12px;
+    font-size: 0.7em;
   }
   .comment__text {
     display: -webkit-box;
@@ -1222,13 +1228,12 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100px;
-    margin-left: 2.5vw;
-    width: 535px;
+    margin-left: 20px;
   }
   .comment__text-input {
     width: 460px;
     height: 96px;
-    padding: 4vw 1vw 4vw;
+    padding: 40px 10px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: 0.3vw solid #e1e1e1;
@@ -1239,7 +1244,7 @@ body {
     font-size: 1em;
   }
   .comment-output {
-    margin: 1vw 0 15vw 0;
+    margin: 30px 0 30px 0;
     padding-left: 270px;
   }
   .comment-button {
@@ -1252,11 +1257,13 @@ body {
     height: 48px;
     margin-bottom: 40px;
     padding: 10px 16px;
-    margin-left: 32vw;
+    margin-left: 320px;
     margin-top: 20px;
   }
   .row-container {
-    width: 53vw;
+    width: 550px;
+    height: 200px;
+    padding-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1266,7 +1273,7 @@ body {
             flex-direction: row;
     margin-left: 50px;
     margin-right: 24px;
-    font-size: 2.5vw;
+    font-size: 25px;
     border-top: 0.2vw solid #e1e1e1;
     border-bottom: 0.2vw solid #e1e1e1;
   }
@@ -1282,6 +1289,8 @@ body {
     font-size: 0.65em;
     font-family: "AvenirSemiBold";
     margin-top: 24px;
+    margin-bottom: 0;
+    margin-left: 0;
   }
   .date-container {
     color: #afafaf;
@@ -1330,7 +1339,6 @@ body {
   .comment__container-text {
     color: #afafaf;
     font-family: "AvenirSemiBold";
-    font-size: 1.2vh;
   }
   .comment__name-input {
     border: 0.3vw solid #323232;

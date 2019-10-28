@@ -78,6 +78,8 @@
   @include medium {
     .section__image {
       padding: 0 3.125%;
+      display: flex;
+      flex-wrap: wrap;
 
       &--title {
         padding-left: 0;
@@ -126,10 +128,11 @@
     .section__image {
       padding: 0;
       width: 100%;
+      margin-left: 130px;
 
       &--title {
         font-size: 2em;
-        margin-left: 180px;
+        margin-left: 50px;
       }
       &--gallery {
         width: 25%;

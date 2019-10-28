@@ -226,6 +226,7 @@
 @include large {
   .comment__form {
     height: 37vw;
+    margin-right: 100px;
   }
   .comment__title {
     font-size: 2em;
@@ -245,34 +246,32 @@
     display: flex;
     flex-direction: column;
     margin: 0 0 0 20px;
-    height: 12vh;
   }
   .comment__container-name,
   .comment__container-text {
     color: $silver;
     font-family: "AvenirSemiBold";
-    font-size: 1.2vh;
-    // margin-left: 10px;
+    font-size: 13px;
+    
   }
   .comment__name-input {
     border: 0.5vw solid $black;
     border-radius: 1.2vw;
     width: 460px;
     height: 60px;
-    padding: 0;
-    font-size: 1em;
+    padding: 12px;
+    font-size: 0.7em;
   }
   .comment__text {
     display: flex;
     flex-direction: column;
     height: 100px;
-    margin-left: 2.5vw;
-    width: 535px;
+    margin-left: 20px;
   }
   .comment__text-input {
     width: 460px;
     height: 96px;
-    padding: 4vw 1vw 4vw;
+    padding: 40px 10px;
     box-sizing: border-box;
     border: 0.3vw solid $mercury;
     border-radius: 1.2vw;
@@ -283,7 +282,7 @@
     
   }
   .comment-output {
-    margin: 1vw 0 15vw 0;
+    margin: 30px 0 30px 0;
     padding-left: 270px;
   }
   .comment-button {
@@ -296,17 +295,19 @@
     height: 48px;
     margin-bottom: 40px;
     padding: 10px 16px;
-    margin-left: 32vw;
+    margin-left: 320px;
     margin-top: 20px;
   }
 
   .row-container {
-    width: 53vw;
+    width: 550px;
+    height: 200px;
+    padding-top: 0;
     display: flex;
     flex-direction: row;
     margin-left: 50px;
     margin-right: 24px;
-    font-size: 2.5vw;
+    font-size: 25px;
     border-top: 0.2vw solid $mercury;
     border-bottom: 0.2vw solid $mercury;
   }
@@ -322,6 +323,8 @@
     font-size: 0.65em;
     font-family: "AvenirSemiBold";
     margin-top: 24px;
+    margin-bottom: 0;
+    margin-left: 0;
   }
   .date-container {
     color: $silver;
@@ -365,8 +368,7 @@
   .comment__container-text {
     color: $silver;
     font-family: "AvenirSemiBold";
-    font-size: 1.2vh;
-    // margin-left: 10px;
+
   }
   .comment__name-input {
     border: 0.3vw solid $black;
