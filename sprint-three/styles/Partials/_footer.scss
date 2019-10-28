@@ -1,7 +1,7 @@
 .footer {
   color: $white;
   background-color: $black;
-  height: 130vh;
+  height: 65vh;
   width: 100%;
 
   &-title {
@@ -48,7 +48,7 @@
 @include medium {
   .footer {
     box-sizing: border-box;
-    height: 40vh;
+    height: 30vh;
  
 
     &-container {

@@ -38,7 +38,7 @@
 .comment__text {
   display: flex;
   flex-direction: column;
-  margin: 0 6vw;
+  margin: 6vw 6vw;
 }
 .comment__text-input {
   width: 60vw;
@@ -153,7 +153,7 @@
   .comment__text {
     display: flex;
     flex-direction: column;
-    margin: 0 8.5vw 3vw;
+    margin: 3vw 8.5vw 5vw;
     font-size: 0.8em;
   }
   .comment__text-input {
@@ -169,14 +169,16 @@
     font-size: 1em;
   }
   .comment-button {
-    border-radius: 1.5vw;
+    border-radius: 0.5vw;
     color: $white;
     background-color: $black;
-    font-size: 3vw;
+    font-size: 1.5vw;
     cursor: pointer;
-    width: 30vw;
-    margin: 1vw 8.5vw 6vw;
-    padding: 20px 26px;
+    width: 20vw;
+    height: 48px;
+    padding: 15px 16px;
+    margin: 0;
+    margin-left: 48vw;
   }
 
   .row-container {
@@ -189,6 +191,9 @@
     font-size: 3.5vw;
     border-top: 0.2vw solid $mercury;
     border-bottom: 0.2vw solid $mercury;
+  }
+  .comment-output{
+    margin-top: 0;
   }
   .button-container {
     width: 8vw;
@@ -220,10 +225,7 @@
 
 @include large {
   .comment__form {
-    // margin: 15px;
-    height: 50vw;
-    // display: flex;
-    // justify-content: center;
+    height: 37vw;
   }
   .comment__title {
     font-size: 2em;
@@ -243,11 +245,13 @@
     display: flex;
     flex-direction: column;
     margin: 0 0 0 20px;
+    height: 12vh;
   }
   .comment__container-name,
   .comment__container-text {
     color: $silver;
     font-family: "AvenirSemiBold";
+    font-size: 1.2vh;
     // margin-left: 10px;
   }
   .comment__name-input {
@@ -255,19 +259,20 @@
     border-radius: 1.2vw;
     width: 460px;
     height: 60px;
-    margin-top: 3vw;
     padding: 0;
     font-size: 1em;
   }
   .comment__text {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    height: 100px;
+    margin-left: 2.5vw;
+    width: 535px;
   }
   .comment__text-input {
     width: 460px;
     height: 96px;
-    padding: 4vw 4vw 4vw;
+    padding: 4vw 1vw 4vw;
     box-sizing: border-box;
     border: 0.3vw solid $mercury;
     border-radius: 1.2vw;
@@ -277,22 +282,26 @@
     font-size: 1em;
     
   }
-  // .comment-output {
-  //   // margin-left: 150px;
-  // }
+  .comment-output {
+    margin: 1vw 0 15vw 0;
+    padding-left: 270px;
+  }
   .comment-button {
     border-radius: 1.5vw;
     color: $white;
     background-color: $black;
-    font-size: 3vw;
+    font-size: 1em;
     cursor: pointer;
-    width: 30vw;
+    width: 160px;
+    height: 48px;
     margin-bottom: 40px;
     padding: 10px 16px;
+    margin-left: 32vw;
+    margin-top: 20px;
   }
 
   .row-container {
-    width: 50vw;
+    width: 53vw;
     display: flex;
     flex-direction: row;
     margin-left: 50px;
@@ -324,113 +333,124 @@
     font-family: "Avenirthin";
     font-size: 0.6em;
     width: 80%;
-    margin-left: 110px;
+    margin-left: 50px;
     margin-top: 0;
   }
 }
 
 @include huge {
   .comment__form {
-    margin: 15px;
     display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: 20vw;
   }
   .comment__title {
-    font-size: 2em;
-    margin-top: 32px;
-    margin-left: 180px;
+    font-size: 3vw;
+    margin: 0 12.5vw;
+    padding: 5vw 0;
     font-family: "AvenirBold";
   }
   .comment__img {
-    width: 6.5vw;
-    height: 6.5vw;
+    width: 4vw;
+    height: 4vw;
     border-radius: 100%;
-    margin: 5.5vw 50px 0;
+    margin: 0 2vw 2vw;
   }
   .comment__name {
-    margin: 20px 15px 15px 20px;
-    display: flex;
-    flex-direction: column;
+    height: 150px;
+    margin-right: 5vw;
   }
-
+  .comment__container-name,
   .comment__container-text {
     color: $silver;
     font-family: "AvenirSemiBold";
-    margin-left: 10px;
+    font-size: 1.2vh;
+    // margin-left: 10px;
   }
   .comment__name-input {
-    border: 0.5vw solid $black;
-    border-radius: 1.2vw;
-    width: 55vw;
-    height: 1.5vw;
-    margin-top: 3vw;
-    margin-right: 35px;
-    padding: 4vw;
-    font-size: 1.5em;
+    border: 0.3vw solid $black;
+    border-radius: 0.5vw;
+    width: 40vw;
+    height: 1vw;
+    padding: 2.5vw;
+    font-size: 1.1vw;
+    margin-top: 0.5vw;
   }
   .comment__text {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 35px 25px 40px;
+    
+    height: 100px;
+    width: 535px;
+    margin-bottom: 0;
+    margin-left: 1.5vw;
+    margin-top: 0;
   }
   .comment__text-input {
-    width: 65vw;
-    height: 1vw;
+    width: 40vw;
+    height: 10vw;
+    padding: 1.5vw;
     box-sizing: border-box;
     border: 0.3vw solid $mercury;
-    border-radius: 1.2vw;
+    border-radius: 0.5vw;
     background-color: $alabaster;
-    margin-top: 30px;
-    padding: 4vw 4vw 15vw 3vw;
-    font-size: 1.5em;
+    resize: none;
+    margin-top: 0.5vw;
+    font-size: 1.1vw;
+    
   }
   .comment-output {
-    margin-left: 100px;
+    padding-left: 270px;
+    margin-top: 5vw;
   }
   .comment-button {
-    border-radius: 1.5vw;
+    border-radius: 0.5vw;
     color: $white;
     background-color: $black;
-    font-size: 3vw;
+    font-size: 1.2vw;
     cursor: pointer;
-    width: 30vw;
-    margin: 20px 40px 25px 20px;
-    padding: 20px 26px;
+    width: 15vw;
+    height: 48px;
+    padding: 10px 16px;
+    margin: 0;
+    margin-left: 26.5vw;
+    margin-top: 2vw;
   }
-
   .row-container {
     width: 50vw;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    font-size: 4vw;
+    padding-bottom: 0;
+    margin-left: 90px;
+    margin-right: 24px;
+    font-size: 2em;
     border-top: 0.2vw solid $mercury;
     border-bottom: 0.2vw solid $mercury;
   }
   .button-container {
-    width: 6vw;
-    height: 6vw;
-    margin-right: 35px;
-    margin-left: 145px;
+    width: 4vw;
+    height: 4vw;
+    margin: 0 2.4vw;
     border-radius: 100%;
     background-color: $silver;
   }
   .name-container {
     width: 170px;
-    font-size: 0.5em;
+    height: 2vw;
+    font-size: 1.2vw;
     font-family: "AvenirSemiBold";
-    margin-top: 24px;
+    margin: 0;
   }
   .date-container {
     color: $silver;
-    font-size: 0.5em;
-    margin-top: 30px;
+    font-size: 1.2vw;
+    margin-top: 0;
     margin-left: 5px;
   }
   .comment-container {
     font-family: "Avenirthin";
-    font-size: 10%;
+    font-size: 1.1vw;
     width: 80%;
-    margin-left: 265px;
+    margin-left: 9vw;
     margin-top: 0;
   }
 }
